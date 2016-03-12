@@ -1,3 +1,3 @@
 module.exports = function(creep) {
-    console.log(creep.memory.action);
+    console.log(creep.memory.actionName);
 }
