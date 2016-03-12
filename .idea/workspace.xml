@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" afterPath="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
-    </list>
+    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="" />
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="Spawn_CreepPopulationController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70731705">
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+            <state vertical-scroll-proportion="-0.54323727">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -421,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70731705">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        <state vertical-scroll-proportion="-0.54323727">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding />
         </state>
       </provider>

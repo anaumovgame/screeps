@@ -52,7 +52,7 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    
+
     return {
         minerCount : minerCount,
         workerCount : workerCount,
