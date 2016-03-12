@@ -26,7 +26,7 @@ function Init()
     SpawnInit("S2", minerMax, workerMax, guardMax, healerMax);
 
     //Prototype init
-    Creep.prototype.action = function
+    Creep.prototype.action = ActionDo;
 
     console.log("------------========== INIT DONE ==========------------");
 }
