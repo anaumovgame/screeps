@@ -91,7 +91,7 @@ function isGuard(creep)
 
 function isHealer(creep)
 {
-    if (creep.memory.class == "Creep_Healer")
+    if (creep.memory.class == CreepConst.Creep_Healer)
     {
         return true;
     } else
