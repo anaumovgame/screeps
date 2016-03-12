@@ -13,6 +13,6 @@ module.exports = function(spawnName)
 
     for (var name in creeps)
     {
-        console.log(name)
+        console.log(name);
     }
 }
