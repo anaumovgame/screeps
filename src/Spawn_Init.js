@@ -1,7 +1,7 @@
-/**
- * Created by Naumov on 13.03.2016.
- */
+module.exports = function(spawnName)
+{
 
+}
 
 function SetDefaultPopulation(spawnName) {
     var workerMax = 2;
@@ -9,7 +9,7 @@ function SetDefaultPopulation(spawnName) {
     var guardMax = 0;
 
     SetPopulation(spawnName, workerMax, builderMax, guardMax);
-},
+}
 
 function SetPopulation(spawnName, workerMax, builderMax, guardMax) {
     console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
