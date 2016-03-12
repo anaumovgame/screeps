@@ -2,7 +2,7 @@ module.exports = function(spawnName)
 {
     console.log("Manage population spawn: " + spawnName);
     var population = getSpawnPopulation(spawnName);
-    console.log("\t" + population);
+    //console.log("\t" + population);
 }
 
 function getSpawnPopulation(spawnName)
