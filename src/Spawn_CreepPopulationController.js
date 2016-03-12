@@ -1,4 +1,5 @@
 var CreepConst = require("Creep_Const");
+var CreepClasses = require("Creep_Classes");
 var SpawnConst = require("Spawn_Const");
 
 module.exports = function(spawnName)
