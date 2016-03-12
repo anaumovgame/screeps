@@ -9,4 +9,10 @@ module.exports.loop = function()
 function InitMemory()
 {
     console.log("Init Memory.");
+    Game.spawns.S1.memory.wkMax
+}
+
+function SetDefaultPopulation(spawnName)
+{
+
 }
