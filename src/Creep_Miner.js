@@ -2,7 +2,7 @@ var CreepConst = require("Creep_Const");
 
 module.exports = {
     name : "Miner",
-    class : "Creep_Miner",
+    class : CreepConst.minerName,
     body : [WORK, CARRY, MOVE],
     action : function() {
 
