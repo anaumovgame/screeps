@@ -53,57 +53,18 @@ function getSpawnPopulation(spawnName)
         }
     }
     console.log(spawnName + " : " + minerCount);
-    return {minerCount : minerCount, workerCount : workerCount, guardCount : guardCount, healerCount : healerCount};
-    //new Array(minerCount, workerCount, guardCount, healerCount);
+    return {
+        minerCount : minerCount,
+        workerCount : workerCount,
+        guardCount : guardCount,
+        healerCount : healerCount
+    };
+
 }
 
 function isClassName(creep, className)
 {
     if (creep.memory.className == className)
-    {
-        return true;
-    } else
-    {
-        return false;
-    }
-}
-
-function isMiner(creep)
-{
-    if (creep.memory.className == CreepConst.Creep_Miner)
-    {
-        return true;
-    } else
-    {
-        return false;
-    }
-}
-
-function isWorker(creep)
-{
-    if (creep.memory.className == CreepConst.Creep_Worker)
-    {
-        return true;
-    } else
-    {
-        return false;
-    }
-}
-
-function isGuard(creep)
-{
-    if (creep.memory.className == CreepConst.Creep_Guard)
-    {
-        return true;
-    } else
-    {
-        return false;
-    }
-}
-
-function isHealer(creep)
-{
-    if (creep.memory.className == CreepConst.Creep_Healer)
     {
         return true;
     } else
