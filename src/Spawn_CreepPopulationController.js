@@ -14,8 +14,42 @@ module.exports = function(spawnName)
         {
             if (isMiner(creep)) {
                 minerCount += 1;
-            }
+            } else
+            if ()
         }
+    }
+}
+
+function isMiner(creep)
+{
+    if (creep.memory.class == "Creep_Miner")
+    {
+        return true;
+    } else
+    {
+        return false;
+    }
+}
+
+function isWorker(creep)
+{
+    if (creep.memory.class == "Worker")
+    {
+        return true;
+    } else
+    {
+        return false;
+    }
+}
+
+function isMiner(creep)
+{
+    if (creep.memory.class == "Miner")
+    {
+        return true;
+    } else
+    {
+        return false;
     }
 }
 
