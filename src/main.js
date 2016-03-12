@@ -8,6 +8,7 @@ module.exports.loop = function()
         enumerable: true,
         configurable: false,
         get: function () {
+            return 1;
         }
     });
     //Memory.asd = function(){}.toSource();
