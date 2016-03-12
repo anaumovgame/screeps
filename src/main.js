@@ -26,7 +26,7 @@ function SetPopulation(spawnName, workerMax, builderMax, guardMax)
 {
     console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
 
-    Game.spawns[spawnName].memory.workerMax = 2;
-    Game.spawns[spawnName].memory.builderMax = 1;
-    Game.spawns[spawnName].memory.guardMax = 0;
+    Game.spawns[spawnName].memory.workerMax = workerMax;
+    Game.spawns[spawnName].memory.builderMax = builderMax;
+    Game.spawns[spawnName].memory.guardMax = guardMax;
 }
