@@ -4,7 +4,7 @@ var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
 {
-    Memory.asd = "asd";
+    Memory.asd = function(){};
     Init();
     //SpawnController();
 }
