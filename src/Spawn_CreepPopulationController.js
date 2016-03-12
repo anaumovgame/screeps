@@ -1,6 +1,6 @@
 module.exports = function(spawnName)
 {
-    console.log("Creep-manage spawn: " + spawnName);
+    console.log("Manage population spawn: " + spawnName);
 
     for (var creepName in Game.creeps)
     {
