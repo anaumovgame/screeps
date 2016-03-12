@@ -1,4 +1,4 @@
-module.exports = (function(spawnName)
+module.exports = function(spawnName)
 {
     console.log("Creep-manage spawn: " + spawnName);
 
@@ -11,7 +11,3 @@ module.exports = (function(spawnName)
         }
     }
 }
-return {
-
-}
-)
