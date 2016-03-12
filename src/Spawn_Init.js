@@ -1,7 +1,7 @@
 module.exports = function(spawnName)
 {
     console.log("Spawn init: " + spawnName);
-    SetDefaultPopulation();
+    SetDefaultPopulation(spawnName);
 }
 
 function SetDefaultPopulation(spawnName) {
