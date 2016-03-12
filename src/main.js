@@ -8,8 +8,8 @@ module.exports.loop = function()
 
 function InitMemory()
 {
-    if (Memory.getAttribute("isInit") == false)
+    if (Memory.isInit == false)
     {
-        Memory.setAttribute("isInit", true);
+        Memory.isInit = true;
     }
 }
