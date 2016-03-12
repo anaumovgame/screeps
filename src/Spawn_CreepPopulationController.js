@@ -9,7 +9,8 @@ module.exports = function(spawnName)
 
 function reproducePopulation(spawnName, population)
 {
-    if ()
+    console.log(spawnName + " : " + population);
+    //if ()
 }
 
 
