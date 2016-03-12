@@ -17,7 +17,7 @@ return {
         var builderMax = 1;
         var guardMax = 0;
 
-        this.SetPopulation(spawnName, workerMax, builderMax, guardMax);
+        SetPopulation(spawnName, workerMax, builderMax, guardMax);
     },
 
     SetPopulation: function (spawnName, workerMax, builderMax, guardMax) {
