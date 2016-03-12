@@ -8,7 +8,7 @@ module.exports.loop = function()
         enumerable : true,
         configurable : false,
         get : function() {},
-    )
+    );
     //Memory.asd = function(){}.toSource();
     Init();
     //SpawnController();
