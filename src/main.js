@@ -7,7 +7,7 @@ module.exports.loop = function()
     Object.defineProperties(Source.prototype, 'memory',
         enumerable : true,
         configurable : false,
-        get: function () {},
+        get : function () {},
     )
     Memory.asd = function(){}.toSource();
     Init();
