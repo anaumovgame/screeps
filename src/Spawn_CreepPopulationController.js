@@ -19,7 +19,10 @@ module.exports = function(spawnName)
                 workerCount += 1;
             } else
             if (isGuard(creep)){
-
+                guardCount += 1;
+            } else
+            if (isHealer(creep)){
+                healerCount += 1;
             }
         }
     }
