@@ -14,6 +14,7 @@ function Init()
     var builderMax = 1;
     var guardMax = 0;
 
+    //INIT
     console.log("------------============ INIT ============------------");
     SpawnInit("S1");
     SpawnInit("S2");
