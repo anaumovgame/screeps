@@ -12,6 +12,7 @@ function Init()
     console.log("------------============ INIT ============------------");
     SpawnInit("S1");
     SpawnInit("S2");
+    console.log("------------========== INIT DONE ==========------------");
 }
 
 //function
