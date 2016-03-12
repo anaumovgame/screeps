@@ -11,6 +11,8 @@ function reproducePopulation(spawnName, population)
     if ()
 }
 
+
+
 function getSpawnPopulation(spawnName)
 {
     var minerCount = 0;
