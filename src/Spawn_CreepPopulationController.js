@@ -40,7 +40,7 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    return {}
+    return {CreepConst.minerName : minerCount};
     //new Array(minerCount, workerCount, guardCount, healerCount);
 }
 
