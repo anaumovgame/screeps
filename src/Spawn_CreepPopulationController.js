@@ -12,7 +12,7 @@ module.exports = function(spawnName)
     }
 }
 
-function SetDefaultPopulation(spawnName)
+SetDefaultPopulation : function(spawnName)
 {
     var workerMax = 2;
     var builderMax = 1;
@@ -21,7 +21,7 @@ function SetDefaultPopulation(spawnName)
     SetPopulation(spawnName, workerMax, builderMax, guardMax);
 }
 
-function SetPopulation(spawnName, workerMax, builderMax, guardMax)
+SetPopulation : function(spawnName, workerMax, builderMax, guardMax)
 {
     console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
 

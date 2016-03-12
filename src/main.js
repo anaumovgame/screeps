@@ -9,6 +9,4 @@ module.exports.loop = function()
 function InitMemory()
 {
     console.log("Init Memory.");
-    SetDefaultPopulation("S1");
-    SetDefaultPopulation("S2");
 }
