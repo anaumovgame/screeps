@@ -23,7 +23,6 @@ function createCreep(spawnName, className)
     var creepClass = CreepClasses[className];
     var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {class : creepClass.class});
     Game.creeps[creepName].name = creepClass.name + "_" + creepName;
-
 }
 
 function getSpawnPopulation(spawnName)
