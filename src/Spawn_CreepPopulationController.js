@@ -14,7 +14,7 @@ function reproducePopulation(spawnName, population)
     console.log(spawnName + " : " + population.minerCount);
     if (population.minerCount < Game.spawns[spawnName].memory.minerMax)
     {
-
+        createCreep(spawnName, CreepConst.Creep_Miner);
     }
 }
 

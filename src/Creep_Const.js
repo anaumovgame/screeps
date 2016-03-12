@@ -1,7 +1,7 @@
 module.exports = {
     //Names
-    minerName   : "Creep_Miner",
-    workerName  : "Creep_Worker",
-    guardName   : "Creep_Guard",
-    healerName  : "Creep_Healer",
+    Creep_Miner   : "Creep_Miner",
+    Creep_Worker  : "Creep_Worker",
+    Creep_Guard   : "Creep_Guard",
+    Creep_Healer  : "Creep_Healer",
 }
