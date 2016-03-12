@@ -1,4 +1,5 @@
 var CreepConst = require("Creep_Const");
+var ActionMine = require("Action_Mine");
 
 module.exports = {
     name : "Miner",
