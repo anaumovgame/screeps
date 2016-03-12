@@ -4,14 +4,13 @@ var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
 {
+    Memory.asd = "asd";
     //Init();
     //SpawnController();
 }
 
 function Init()
 {
-    Memory.asd = "asd";
-
     //CONST
     var minerMax = SpawnConst.minerMax;
     var workerMax = SpawnConst.workerMax;
