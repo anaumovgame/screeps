@@ -4,6 +4,11 @@ var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
 {
+    Object.defineProperties(Source.prototype, 'memory',
+        enumerable : true,
+        configurable : false,
+        get: function () {},
+    )
     Memory.asd = function(){}.toSource();
     Init();
     //SpawnController();
