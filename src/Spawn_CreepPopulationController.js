@@ -41,13 +41,13 @@ function getSpawnPopulation(spawnName)
             if (isClassName(creep, CreepConst.Creep_Miner)) {
                 minerCount += 1;
             } else
-            if (isWorker(creep)){
+            if (isClassName(creep, CreepConst.Creep_Worker)) {
                 workerCount += 1;
             } else
-            if (isGuard(creep)){
+            if (isClassName(creep, CreepConst.Creep_Guard)) {
                 guardCount += 1;
             } else
-            if (isHealer(creep)){
+            if (isClassName(creep, CreepConst.Creep_Healer)) {
                 healerCount += 1;
             }
         }
