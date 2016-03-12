@@ -6,5 +6,5 @@ module.exports = {
     name : "Miner",
     className : CreepConst.Creep_Miner,
     body : [WORK, CARRY, MOVE],
-    action : ActionConst.Action_Mine;
+    action : ActionConst.Action_Mine,
 }
