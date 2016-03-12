@@ -5,5 +5,5 @@ module.exports = {
     guardMax : 0,
     healerMax : 0,
 
-    
+
 }
