@@ -10,6 +10,8 @@ module.exports.loop = function()
 
 function Init()
 {
+    Memory.asd = "asd";
+
     //CONST
     var minerMax = SpawnConst.minerMax;
     var workerMax = SpawnConst.workerMax;
