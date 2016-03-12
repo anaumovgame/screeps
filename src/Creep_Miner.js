@@ -5,6 +5,5 @@ module.exports = {
     className : CreepConst.minerName,
     body : [WORK, CARRY, MOVE],
     action : function() {
-
     }
 }
