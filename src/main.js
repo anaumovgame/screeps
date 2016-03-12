@@ -8,9 +8,5 @@ module.exports.loop = function()
 
 function InitMemory()
 {
-    console.log(Memory.isInit);
-    if (Memory.isInit == false)
-    {
-        Memory.isInit = true;
-    }
+    console.log("Инициализация памяти");
 }
