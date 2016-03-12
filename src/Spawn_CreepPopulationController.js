@@ -9,7 +9,7 @@ module.exports = function(spawnName)
 
 function reproducePopulation(spawnName, population)
 {
-    console.log(spawnName + " : " + population);
+    console.log(spawnName + " : " + population.Creep_Miner);
     //if ()
 }
 
