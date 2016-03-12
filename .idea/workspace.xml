@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" afterPath="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Creep_Classes.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Classes.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_CreepPopulationController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Spawn_CreepPopulationController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05321508">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_Init.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
+      <file leaf-file-name="Creep_Classes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Creep_Classes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spawn_Init.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05321508">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -101,6 +113,8 @@
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/Spawn_Init.js" />
         <option value="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
+        <option value="$PROJECT_DIR$/src/Classes.js" />
+        <option value="$PROJECT_DIR$/src/Creep_Classes.js" />
       </list>
     </option>
   </component>
@@ -331,18 +345,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
+    <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
+    <entry file="file://$PROJECT_DIR$/src/Creep_Classes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05321508">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
