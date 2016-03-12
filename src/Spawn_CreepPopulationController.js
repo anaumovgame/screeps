@@ -7,7 +7,7 @@ module.exports = function(spawnName)
         var creep = Game.creeps[creepName];
         if (creep.memory.spawnName == spawnName)
         {
-
+            if ()
         }
     }
 }
@@ -16,9 +16,9 @@ function isMiner(creep)
 {
     if (creep.memory.class == "Miner")
     {
-        return true;
+        return 1;
     } else
     {
-        return false;
+        return 0;
     }
 }
