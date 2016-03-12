@@ -12,7 +12,8 @@ module.exports = function(spawnName)
         var creep = Game.creeps[creepName];
         if (creep.memory.spawnName == spawnName)
         {
-            minerCount += isMiner();
+            if (isMiner(creep))
+            minerCount += 1;
         }
     }
 }
