@@ -1,4 +1,5 @@
 var CreepConst = require("Creep_Const");
+var SpawnConst = require("SpaWN_Const");
 
 module.exports = function(spawnName)
 {
@@ -10,7 +11,7 @@ module.exports = function(spawnName)
 function reproducePopulation(spawnName, population)
 {
     console.log(spawnName + " : " + population.Creep_Miner);
-    //if ()
+    if ()
 }
 
 
