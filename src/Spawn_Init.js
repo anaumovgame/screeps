@@ -1,7 +1,10 @@
 module.exports = function(spawnName, workerMax, builderMax, guardMax)
 {
-    console.log("Spawn init: " + spawnName);
-    SetDefaultPopulation(spawnName);
+    console.log("Spawn init: " + spawnName + " : Population : " + workerMax + ", " + builderMax + ", " + guardMax);
+
+    Game.spawns[spawnName].memory.workerMax = workerMax;
+    Game.spawns[spawnName].memory.builderMax = builderMax;
+    Game.spawns[spawnName].memory.guardMax = guardMax;
 }
 
 function SetDefaultPopulation(spawnName) {
@@ -13,9 +16,5 @@ function SetDefaultPopulation(spawnName) {
 }
 
 function SetPopulation(spawnName, ) {
-    console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
 
-    Game.spawns[spawnName].memory.workerMax = workerMax;
-    Game.spawns[spawnName].memory.builderMax = builderMax;
-    Game.spawns[spawnName].memory.guardMax = guardMax;
 }
