@@ -1,3 +1,4 @@
-/**
- * Created by Naumov on 13.03.2016.
- */
+module.exports = function()
+{
+    for (var creepName in Game.creeps)
+}
