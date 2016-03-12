@@ -8,8 +8,3 @@ module.exports = function(spawnName)
         console.log(name);
     }
 }
-
-function isNamez(value)
-{
-    return true;
-}
