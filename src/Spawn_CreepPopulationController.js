@@ -22,7 +22,7 @@ function createCreep(spawnName, className)
 {
     console.log("Spawn : " + spawnName + " : Create creep : " + className );
     var creepClass = CreepClasses[className];
-    var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {className : creepClass.className, spawnName : spawnName});
+    var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {className : creepClass.className, spawnName : spawnName, action : creepClass.action});
     console.log("result: " + creepName);
     //Game.creeps[creepName].name = creepClass.name + "_" + creepName;
 }
