@@ -1,4 +1,4 @@
-module.export = function()
+module.export = function(test)
 {
     for (var name in Game.spawns)
     {
