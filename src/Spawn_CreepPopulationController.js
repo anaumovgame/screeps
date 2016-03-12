@@ -9,5 +9,5 @@ module.exports = function(spawnName)
         {
             console.log(spawnName + " : " + creepName);
         }
-    }
+    } 
 };
