@@ -1,6 +1,5 @@
 module.exports = function(spawnName, workerMax, builderMax, guardMax)
 {
-    console.log(Game.spawns[spawnName].memory.isInit);
     if (Game.spawns[spawnName].memory.isInit != true) {
         console.log("Spawn init: " + spawnName + " : Population : " + workerMax + ", " + builderMax + ", " + guardMax);
 
