@@ -13,4 +13,4 @@ function Init()
     CreepPopulationController.SetDefaultPopulation("S1");
 }
 
-function
+//function
