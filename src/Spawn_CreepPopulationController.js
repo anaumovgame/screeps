@@ -30,7 +30,7 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    return [minerCount, workerCount, guardCount, healerCount];
+    return new Array(minerCount, workerCount, guardCount, healerCount);
 }
 
 function isMiner(creep)
