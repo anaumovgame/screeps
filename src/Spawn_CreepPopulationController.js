@@ -38,7 +38,7 @@ function getSpawnPopulation(spawnName)
         var creep = Game.creeps[creepName];
         if (creep.memory.spawnName == spawnName)
         {
-            if (isMiner(creep)) {
+            if (isClassName(creep, CreepConst.Creep_Miner)) {
                 minerCount += 1;
             } else
             if (isWorker(creep)){
