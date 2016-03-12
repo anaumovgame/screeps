@@ -5,6 +5,6 @@ module.exports = function(spawnName)
 
     for (var creepName in creeps)
     {
-        console.log(name);
+        console.log(creepName);
     }
 };
