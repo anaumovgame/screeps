@@ -3,12 +3,11 @@ module.exports = function(spawnName)
     console.log("Manage population spawn: " + spawnName);
     var population = getSpawnPopulation(spawnName);
     reproducePopulation(spawnName, population);
-    //console.log("\t" + population);
 }
 
 function reproducePopulation(spawnName, population)
 {
-    //if ()
+    if ()
 }
 
 
@@ -39,7 +38,8 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    return new Array(minerCount, workerCount, guardCount, healerCount);
+    return {}
+    //new Array(minerCount, workerCount, guardCount, healerCount);
 }
 
 function isMiner(creep)
