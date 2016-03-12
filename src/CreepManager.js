@@ -1,7 +1,7 @@
 module.exports = function(spawnName)
 {
     console.log("Creep-manage spawn: " + spawnName);
-    creeps = Game.creeps.filter(isName);
+    creeps = Game.creeps.filter(isNamez);
 
     for (var name in creeps)
     {
@@ -9,7 +9,7 @@ module.exports = function(spawnName)
     }
 }
 
-function isName(value)
+function isNamez(value)
 {
     return true;
 }
