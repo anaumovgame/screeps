@@ -1,4 +1,4 @@
-var SpawnController = require("SpawnController");
+var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
 {
