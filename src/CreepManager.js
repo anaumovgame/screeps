@@ -1,7 +1,7 @@
 module.exports = function(spawnName)
 {
     console.log("Creep-manage spawn: " + spawnName);
-    creeps = Game.creeps.filter(isNamez);
+    creeps = Game.creeps.filter({role: "wk"});
 
     for (var name in creeps)
     {
