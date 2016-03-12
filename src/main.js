@@ -9,7 +9,7 @@ module.exports.loop = function()
 
 function Init()
 {
-    console.log("---=== Init ===---");
+    console.log("------------============ INIT ============------------");
     SpawnInit("S1");
     SpawnInit("S2");
 }
