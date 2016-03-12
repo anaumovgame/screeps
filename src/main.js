@@ -1,4 +1,4 @@
-var CreepPopulationController = require("Spawn_CreepPopulationController");
+var SpawnInit = require("Spawn_Init");
 var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
@@ -10,7 +10,8 @@ module.exports.loop = function()
 function Init()
 {
     console.log("---=== Init ===---");
-    CreepPopulationController.SetDefaultPopulation("S1");
+    SpawnInit("S1");
+    SpawnInit("S2");
 }
 
 //function

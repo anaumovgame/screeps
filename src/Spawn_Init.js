@@ -1,6 +1,6 @@
 module.exports = function(spawnName)
 {
-
+    SetDefaultPopulation();
 }
 
 function SetDefaultPopulation(spawnName) {
