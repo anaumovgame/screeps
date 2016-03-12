@@ -21,7 +21,7 @@ function reproducePopulation(spawnName, population)
 function createCreep(spawnName, className)
 {
     var creepClass = CreepClasses[className];
-    Game.spawns[spawnName].createCreep(CreepClasses.Creep_Miner.body, null, )
+    Game.spawns[spawnName].createCreep(creepClass.body, null, {class : creepClass.class})
 }
 
 function getSpawnPopulation(spawnName)
