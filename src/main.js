@@ -11,7 +11,7 @@ function Init()
 {
     //CONST
     var minerMax = 2;
-    var workerMax = 2;
+    var workerMax = 1;
     var builderMax = 1;
     var guardMax = 0;
 
