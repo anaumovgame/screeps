@@ -1,4 +1,4 @@
-module.exports = function(spawnName)
+module.exports = (function(spawnName)
 {
     console.log("Creep-manage spawn: " + spawnName);
 
@@ -28,3 +28,4 @@ return {
         Game.spawns[spawnName].memory.guardMax = guardMax;
     }
 }
+)
