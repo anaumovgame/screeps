@@ -12,5 +12,5 @@ module.exports = function(spawnName)
 
 function isName(value)
 {
-    
+    return true;
 }
