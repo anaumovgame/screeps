@@ -42,7 +42,7 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    return {Creep_Miner : minerCount, Creep_Worker : workerCount, Creep_Guard : guardCount, Creep_Healer : healerCount};
+    return {minerCount : minerCount, workerCount : workerCount, guardCount : guardCount, healerCount : healerCount};
     //new Array(minerCount, workerCount, guardCount, healerCount);
 }
 
