@@ -9,7 +9,7 @@ module.exports.loop = function()
 
 function Init()
 {
-    /*CONST*/
+    //CONST
     var workerMax = 2;
     var builderMax = 1;
     var guardMax = 0;
