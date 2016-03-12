@@ -57,6 +57,17 @@ function getSpawnPopulation(spawnName)
     //new Array(minerCount, workerCount, guardCount, healerCount);
 }
 
+function isClassName(creep, className)
+{
+    if (creep.memory.className == className)
+    {
+        return true;
+    } else
+    {
+        return false;
+    }
+}
+
 function isMiner(creep)
 {
     if (creep.memory.className == CreepConst.Creep_Miner)
