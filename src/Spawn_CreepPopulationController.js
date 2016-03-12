@@ -14,11 +14,15 @@ function reproducePopulation(spawnName, population)
     console.log(spawnName + " : " + population.minerCount);
     if (population.minerCount < Game.spawns[spawnName].memory.minerMax)
     {
-        Game.spawns[spawnName].createCreep()
+
     }
 }
 
-
+function createCreep(spawnName, className)
+{
+    var creepClass = CreepClasses[className];
+    Game.spawns[spawnName].createCreep(CreepClasses.Miner.body, null, )
+}
 
 function getSpawnPopulation(spawnName)
 {
