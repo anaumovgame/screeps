@@ -33,7 +33,7 @@ function isMiner(creep)
 
 function isWorker(creep)
 {
-    if (creep.memory.class == "Worker")
+    if (creep.memory.class == "Creep_Worker")
     {
         return true;
     } else
