@@ -8,9 +8,7 @@ module.exports = function(spawnName, workerMax, builderMax, guardMax)
 }
 
 function SetDefaultPopulation(spawnName) {
-    var workerMax = 2;
-    var builderMax = 1;
-    var guardMax = 0;
+
 
     SetPopulation(spawnName, workerMax, builderMax, guardMax);
 }
