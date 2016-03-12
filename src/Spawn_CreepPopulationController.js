@@ -59,7 +59,7 @@ function getSpawnPopulation(spawnName)
 
 function isMiner(creep)
 {
-    if (creep.memory.class == CreepConst.Creep_Miner)
+    if (creep.memory.role == CreepConst.Creep_Miner)
     {
         return true;
     } else
