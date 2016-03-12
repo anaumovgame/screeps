@@ -80,7 +80,7 @@ function isWorker(creep)
 
 function isGuard(creep)
 {
-    if (creep.memory.class == "Creep_Guard")
+    if (creep.memory.class == CreepConst.Creep_Guard)
     {
         return true;
     } else
