@@ -10,6 +10,7 @@ module.exports.loop = function()
 function Init()
 {
     //CONST
+    var minerMax = 2;
     var workerMax = 2;
     var builderMax = 1;
     var guardMax = 0;
