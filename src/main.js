@@ -15,5 +15,7 @@ function InitMemory()
 
 function SetDefaultPopulation(spawnName)
 {
-
+    Game.spawns[spawnName].memory.workerMax = 2;
+    Game.spawns[spawnName].memory.builderMax = 1;
+    Game.spawns[spawnName].memory.guardMax = 1;
 }
