@@ -8,5 +8,5 @@ module.exports.loop = function()
 
 function InitMemory()
 {
-    console.log(Init Memory.);
+    console.log("Init Memory.");
 }
