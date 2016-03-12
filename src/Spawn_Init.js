@@ -6,13 +6,3 @@ module.exports = function(spawnName, workerMax, builderMax, guardMax)
     Game.spawns[spawnName].memory.builderMax = builderMax;
     Game.spawns[spawnName].memory.guardMax = guardMax;
 }
-
-function SetDefaultPopulation(spawnName) {
-
-
-    SetPopulation(spawnName, workerMax, builderMax, guardMax);
-}
-
-function SetPopulation(spawnName, ) {
-
-}

@@ -20,5 +20,3 @@ function Init()
     SpawnInit("S2");
     console.log("------------========== INIT DONE ==========------------");
 }
-
-//function
