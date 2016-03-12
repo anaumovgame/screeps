@@ -11,21 +11,20 @@ module.exports = function(spawnName)
         }
     }
 }
+return {
+    SetDefaultPopulation: function (spawnName) {
+        var workerMax = 2;
+        var builderMax = 1;
+        var guardMax = 0;
 
-SetDefaultPopulation : function(spawnName)
-{
-    var workerMax = 2;
-    var builderMax = 1;
-    var guardMax = 0;
+        SetPopulation(spawnName, workerMax, builderMax, guardMax);
+    }
 
-    SetPopulation(spawnName, workerMax, builderMax, guardMax);
-}
+    SetPopulation: function (spawnName, workerMax, builderMax, guardMax) {
+        console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
 
-SetPopulation : function(spawnName, workerMax, builderMax, guardMax)
-{
-    console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
-
-    Game.spawns[spawnName].memory.workerMax = workerMax;
-    Game.spawns[spawnName].memory.builderMax = builderMax;
-    Game.spawns[spawnName].memory.guardMax = guardMax;
+        Game.spawns[spawnName].memory.workerMax = workerMax;
+        Game.spawns[spawnName].memory.builderMax = builderMax;
+        Game.spawns[spawnName].memory.guardMax = guardMax;
+    }
 }
