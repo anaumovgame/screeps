@@ -10,4 +10,9 @@ module.exports = function(spawnName)
            return false;
        };
     });
+
+    for (var name in creeps)
+    {
+        console.log(name)
+    }
 }
