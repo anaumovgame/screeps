@@ -1,8 +1,7 @@
 module.exports = function(spawnName)
 {
     console.log("Creep-manage spawn: " + spawnName);
-    creeps = Game.creeps.filter(function(x) { return x > 3;
-    });
+    creeps = Game.creeps.filter(isName);
 
     for (var name in creeps)
     {
