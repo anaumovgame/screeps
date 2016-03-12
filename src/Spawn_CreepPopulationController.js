@@ -10,7 +10,7 @@ module.exports = function(spawnName)
             console.log(spawnName + " : " + creepName);
         }
     }
-};
+}
 
 function SetDefaultPopulation(spawnName)
 {
