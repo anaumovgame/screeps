@@ -16,7 +16,7 @@ function Init()
 
     //INIT
     console.log("------------============ INIT ============------------");
-    SpawnInit("S1");
-    SpawnInit("S2");
+    SpawnInit("S1", workerMax, builderMax, guardMax);
+    SpawnInit("S2", workerMax, builderMax, guardMax);
     console.log("------------========== INIT DONE ==========------------");
 }
