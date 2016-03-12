@@ -52,14 +52,13 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
-    console.log(spawnName + " : " + minerCount);
+    
     return {
         minerCount : minerCount,
         workerCount : workerCount,
         guardCount : guardCount,
         healerCount : healerCount
     };
-
 }
 
 function isClassName(creep, className)
