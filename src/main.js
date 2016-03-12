@@ -9,5 +9,5 @@ module.exports.loop = function()
 
 function Init()
 {
-    console.log("Init Memory.");
+    console.log("---=== Init ===---");
 }
