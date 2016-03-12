@@ -11,7 +11,7 @@ module.exports = function(spawnName)
 
 function reproducePopulation(spawnName, population)
 {
-    console.log(spawnName + " : " + population.minerCount);
+
     if (population.minerCount < Game.spawns[spawnName].memory.minerMax)
     {
         createCreep(spawnName, CreepConst.Creep_Miner);
@@ -51,6 +51,7 @@ function getSpawnPopulation(spawnName)
             }
         }
     }
+    console.log(spawnName + " : " + minerCount);
     return {minerCount : minerCount, workerCount : workerCount, guardCount : guardCount, healerCount : healerCount};
     //new Array(minerCount, workerCount, guardCount, healerCount);
 }
