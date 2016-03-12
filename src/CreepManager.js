@@ -4,10 +4,10 @@ module.exports = function(spawnName)
     creeps = Game.creeps.filter(function(x) {
        if (x.spawnName = spawnName)
        {
-            return true
+            return true;
        } else
        {
-           return false
+           return false;
        };
     });
 }
