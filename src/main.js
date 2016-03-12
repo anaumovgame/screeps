@@ -19,7 +19,7 @@ function SetDefaultPopulation(spawnName)
     var builderMax = 1;
     var guardMax = 0;
 
-
+    SetPopulation(spawnName, workerMax, builderMax, guardMax);
 }
 
 function SetPopulation(spawnName, workerMax, builderMax, guardMax)
