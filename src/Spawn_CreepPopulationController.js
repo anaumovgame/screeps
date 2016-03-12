@@ -8,7 +8,7 @@ module.exports = function(spawnName)
 
 function reproducePopulation(spawnName, population)
 {
-
+    if ()
 }
 
 function getSpawnPopulation(spawnName)
