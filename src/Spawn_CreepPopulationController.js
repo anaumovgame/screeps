@@ -18,7 +18,7 @@ return {
         var guardMax = 0;
 
         SetPopulation(spawnName, workerMax, builderMax, guardMax);
-    }
+    },
 
     SetPopulation: function (spawnName, workerMax, builderMax, guardMax) {
         console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
