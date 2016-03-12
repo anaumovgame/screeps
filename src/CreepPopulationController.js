@@ -4,9 +4,10 @@ module.exports = function(spawnName)
 
     for (var creepName in Game.creeps)
     {
-        if (Game.creeps[creepName].memory.spawnName == spawnName)
+        var creep = Game.creeps[creepName];
+        if (creep.memory.spawnName == spawnName)
         {
-            
+            Game.creeps[creepName]
         }
     }
 };
