@@ -1,3 +1,5 @@
+var CreepConst = require("Creep_Const");
+
 module.exports = function(spawnName)
 {
     console.log("Manage population spawn: " + spawnName);
