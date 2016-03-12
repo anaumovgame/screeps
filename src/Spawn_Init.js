@@ -1,4 +1,4 @@
-module.exports = function(spawnName, minerMax, workerMax, builderMax, guardMax)
+module.exports = function(spawnName, minerMax, workerMax, guardMax, healerMax)
 {
     if (Game.spawns[spawnName].memory.isInit != true)
     {
@@ -6,8 +6,9 @@ module.exports = function(spawnName, minerMax, workerMax, builderMax, guardMax)
 
         Game.spawns[spawnName].memory.minerMax = minerMax;
         Game.spawns[spawnName].memory.workerMax = workerMax;
-        Game.spawns[spawnName].memory.builderMax = builderMax;
         Game.spawns[spawnName].memory.guardMax = guardMax;
+        Game.spawns[spawnName].memory.healerMax = healerMax;
+
 
         Game.spawns[spawnName].memory.isInit = true;
     }
