@@ -1,4 +1,4 @@
-/**
- * Created by Naumov on 12.03.2016.
- */
-123
+module.export = function()
+{
+    
+}
