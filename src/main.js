@@ -2,11 +2,11 @@ var SpawnController = require("Spawn_Controller");
 
 module.exports.loop = function()
 {
-    InitMemory();
+    Init();
     SpawnController();
 }
 
-function InitMemory()
+function Init()
 {
     console.log("Init Memory.");
 }
