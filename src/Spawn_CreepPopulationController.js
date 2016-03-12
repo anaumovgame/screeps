@@ -1,7 +1,12 @@
 module.exports = function(spawnName)
 {
     console.log("Manage population spawn: " + spawnName);
+    var []population = getSpawnPopulation(spawnName);
 
+}
+
+function getSpawnPopulation(spawnName)
+{
     var minerCount = 0;
     var workerCount = 0;
     var guardCount = 0;
