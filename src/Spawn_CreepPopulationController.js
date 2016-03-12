@@ -70,7 +70,7 @@ function isMiner(creep)
 
 function isWorker(creep)
 {
-    if (creep.memory.class == CreepConst.Creep_Worker)
+    if (creep.memory.className == CreepConst.Creep_Worker)
     {
         return true;
     } else
@@ -81,7 +81,7 @@ function isWorker(creep)
 
 function isGuard(creep)
 {
-    if (creep.memory.class == CreepConst.Creep_Guard)
+    if (creep.memory.className == CreepConst.Creep_Guard)
     {
         return true;
     } else
@@ -92,7 +92,7 @@ function isGuard(creep)
 
 function isHealer(creep)
 {
-    if (creep.memory.class == CreepConst.Creep_Healer)
+    if (creep.memory.className == CreepConst.Creep_Healer)
     {
         return true;
     } else
