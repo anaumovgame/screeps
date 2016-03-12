@@ -1,3 +1,4 @@
+var ConstInit = require("Spawn_Init");
 var SpawnInit = require("Spawn_Init");
 var SpawnController = require("Spawn_Controller");
 
