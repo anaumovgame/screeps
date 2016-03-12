@@ -11,7 +11,7 @@ module.exports = function(spawnName)
 function reproducePopulation(spawnName, population)
 {
     console.log(spawnName + " : " + population.Creep_Miner);
-    if (population.Creep_Miner < Game.spawns[spawnName].memory.)
+    //if (population.Creep_Miner < Game.spawns[spawnName].memory.)
 }
 
 
