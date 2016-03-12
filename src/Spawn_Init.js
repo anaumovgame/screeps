@@ -2,7 +2,6 @@ module.exports = function(spawnName, workerMax, builderMax, guardMax)
 {
 //    if (Game.spawns[spawnName].memory.isInit != true)
     {
-        Game.spawns[spawnName].prototype.say.call(null, "Population : " + workerMax + ", " + builderMax + ", " + guardMax);
         console.log("Spawn init: " + spawnName + " : Population : " + workerMax + ", " + builderMax + ", " + guardMax);
 
         Game.spawns[spawnName].memory.workerMax = workerMax;
