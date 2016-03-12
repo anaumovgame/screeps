@@ -9,3 +9,8 @@ module.exports = function(spawnName)
         console.log(name);
     }
 }
+
+function isName(value)
+{
+    
+}
