@@ -16,6 +16,9 @@ function isMiner(creep)
 {
     if (creep.memory.class == "Miner")
     {
-        
+        return true;
+    } else
+    {
+        return false;
     }
 }
