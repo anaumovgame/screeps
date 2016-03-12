@@ -1,4 +1,4 @@
-var ConstInit = require("Spawn_Init");
+var ConstInit = require("Const_Init");
 var SpawnInit = require("Spawn_Init");
 var SpawnController = require("Spawn_Controller");
 
@@ -11,7 +11,10 @@ module.exports.loop = function()
 function Init()
 {
     //CONST
-
+    var minerMax = ConstInit.minerMax;
+    var workerMax = ConstInit.workerMax;
+    var guardMax = ConstInit.guardMax;
+    var healerMax = ConstInit.healerMax;
 
     //INIT
     console.log("------------============ INIT ============------------");
