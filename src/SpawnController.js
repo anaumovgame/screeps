@@ -1,4 +1,4 @@
-var CreepManager = require("CreepManager");
+var CreepPopulationController = require("CreepPopulationController");
 
 module.exports = function(test)
 {
