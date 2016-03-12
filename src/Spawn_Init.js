@@ -1,4 +1,4 @@
-module.exports = function(spawnName)
+module.exports = function(spawnName, workerMax, builderMax, guardMax)
 {
     console.log("Spawn init: " + spawnName);
     SetDefaultPopulation(spawnName);
@@ -12,7 +12,7 @@ function SetDefaultPopulation(spawnName) {
     SetPopulation(spawnName, workerMax, builderMax, guardMax);
 }
 
-function SetPopulation(spawnName, workerMax, builderMax, guardMax) {
+function SetPopulation(spawnName, ) {
     console.log(spawnName + " : SetPopulation : " + workerMax + ", " + builderMax + ", " + guardMax);
 
     Game.spawns[spawnName].memory.workerMax = workerMax;
