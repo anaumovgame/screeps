@@ -5,7 +5,6 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
-    console.log(nearestFlag);
     if (nearestFlag) {
         if (creep.carry.energy < creep.carryCapacity) {
             var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: nearestFlag.pos}})[0];
