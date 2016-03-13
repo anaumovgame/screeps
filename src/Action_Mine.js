@@ -22,7 +22,6 @@ function selectNearestFlag(spawn, flag_type)
 
         if (way.path.length < wayLength)
         {
-            console.log(flag.name);
             nearestFlagName = flag.name;
             wayLength = way.path.length;
         }
