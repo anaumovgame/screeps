@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/Action_Mine.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.10643016">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -480,7 +480,7 @@
     <entry file="file://$PROJECT_DIR$/src/Action_Mine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10643016">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
