@@ -96,12 +96,12 @@ function repairStructures(creep) {
     if (creep.carry.energy > 0) {
         //Если есть что чинить - чиним
         if (structures.length > 0) {
+            if (structures[0].ticksToLive)
             if (creep.build(structures[0]) == -9) {
                 creep.moveTo(structures[0]);
             }
             return 1;
-        } else
-        {
+        } else {
             return 0;
         }
     }
