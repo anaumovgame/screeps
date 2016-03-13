@@ -36,6 +36,9 @@ function deliverResource(creep)
     //Если спавн полон, то ищем ближайшее к нему свободное хранилище
     {
         var nearestExtensions = selectNearestExtension(spawn);
+        if (creep.transferEnergy(nearestExtensions) == -9) {
+            creep.moveTo(nearestExtensions);
+        }
     }
 }
 
