@@ -121,9 +121,10 @@ function buildStructures(creep)
         }
     }
 }
-    function upgradeRoomController(creep){
-        var roomController = creep.room.controller;
-        if (creep.upgradeController(roomController) == -9) {
-            creep.moveTo(roomController);
-        }
+
+function upgradeRoomController(creep) {
+    var roomController = creep.room.controller;
+    if (creep.upgradeController(roomController) == -9) {
+        creep.moveTo(roomController);
     }
+}
