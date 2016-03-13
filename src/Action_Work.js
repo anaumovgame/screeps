@@ -16,12 +16,16 @@ module.exports = function(creep)
         var minerCount = 0;
         for (var name in Game.creeps)
         {
-            if Game.creeps[name].memory.className = Creep.
+            if (Game.creeps[name].memory.className == CreepConst.Creep_Miner)
+            {
+                minerCount++;
+            }
         }
-        
 
-        if (spawn.transferEnergy(creep) == -9) {
-            creep.moveTo(spawn);
+        if (minerCount == 4) {
+            if (spawn.transferEnergy(creep) == -9) {
+                creep.moveTo(spawn);
+            }
         }
     }
 }
