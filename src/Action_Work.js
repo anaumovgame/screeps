@@ -99,6 +99,7 @@ function repairStructures(creep) {
             if (creep.build(structures[0]) == -9) {
                 creep.moveTo(structures[0]);
             }
+            return 1;
         } else
         //≈сли нечего строить - апргейдим рум-контроллер
         {
