@@ -7,7 +7,7 @@ module.exports = function(creep)
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
     if (nearestFlag) {
         if (creep.carry.energy < creep.carryCapacity) {
-            harvestUnderFlag(nearestFlag);
+            harvestUnderFlag(creep, nearestFlag);
         } else
         {
             var spawn = Game.spawns[creep.memory.spawnName];
@@ -20,7 +20,7 @@ module.exports = function(creep)
 }
 
 //Копать ресурс под флагом
-function harvestUnderFlag(flag)
+function harvestUnderFlag(creep, flag)
 {
     var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
     if (creep.harvest(enegrySource) == -9) {
