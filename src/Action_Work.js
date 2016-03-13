@@ -127,4 +127,5 @@ function upgradeRoomController(creep) {
     if (creep.upgradeController(roomController) == -9) {
         creep.moveTo(roomController);
     }
+    return 1;
 }
