@@ -6,10 +6,6 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
 
-
-
-
-
     if (creep.carry.energy > 0) {
        /* if (repairStructures(creep) == 1)
         {
@@ -18,23 +14,8 @@ module.exports = function(creep)
         if (buildStructures(creep) == 1)
         {
 
-        } else
-        {
+        } else {
             upgradeRoomController(creep);
-        }
-    }
-
-        var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
-        //≈сли есть что строить - строим
-        if (sites.length > 0)
-        {
-            if (creep.build(sites[0]) == -9) {
-                creep.moveTo(sites[0]);
-            }
-        } else
-        //≈сли нечего строить - апргейдим рум-контроллер
-        {
-
         }
     } else
     {
