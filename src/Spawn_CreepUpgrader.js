@@ -23,7 +23,7 @@ module.exports = function(){
         {
             var elemIndex = finalBody.indexOf(bodyPart);
             if (elemIndex > -1) {
-                finalBody.slice(elemIndex);
+                finalBody = finalBody.slice(elemIndex);
             }
         }
         console.log("3 - " + creepName + " : " + finalBody);
