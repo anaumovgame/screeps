@@ -11,7 +11,8 @@ module.exports = function()
          {
              var spawn = Game.spawns[creep.memory.spawnName];
              creep.moveTo(spawn);
+         } else {
+             ActionList[creep.memory.actionName](creep);
          }
-        ActionList[creep.memory.actionName](creep);
     }
 }
