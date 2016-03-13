@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="" />
+    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Action_Mine.js" afterPath="$PROJECT_DIR$/src/Action_Mine.js" />
+    </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="Action_Mine.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Action_Mine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58536583">
-              <caret line="22" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.2660754">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -476,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Action_Mine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58536583">
-          <caret line="22" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.2660754">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
         </state>
       </provider>
