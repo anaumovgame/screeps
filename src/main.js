@@ -19,11 +19,11 @@ function Init()
     var healerMax = SpawnConst.healerMax;
 
     //INIT
-    console.log("------------============ INIT ============------------");
+    //console.log("------------============ INIT ============------------");
 
     //Spawn init
     SpawnInit("S1", minerMax, workerMax, guardMax, healerMax);
     //SpawnInit("S2", minerMax, workerMax, guardMax, healerMax);
 
-    console.log("------------========== INIT DONE ==========------------");
+    //console.log("------------========== INIT DONE ==========------------");
 }
