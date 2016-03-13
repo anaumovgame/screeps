@@ -12,6 +12,10 @@ module.exports = function(creep)
             if (creep.harvest(enegrySource) == -9) {
                 creep.moveTo(enegrySource);
             }
+        } else
+        {
+            var spawn = Game.spawns[creep.memory.spawnName]
+            creep.transferEnergy()
         }
     }
 }
