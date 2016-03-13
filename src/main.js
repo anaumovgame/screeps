@@ -8,6 +8,7 @@ module.exports.loop = function()
 {
     Init();
     SpawnController();
+    CreepController();
 }
 
 function Init()
