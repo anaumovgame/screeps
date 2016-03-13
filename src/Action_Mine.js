@@ -53,12 +53,15 @@ function selectNearestEmptyExtension(spawn)
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
 
-        //»змер€ю путь
-        var way = PathFinder.search(spawn.pos, extension.pos);
-        //—охран€ю наименьший путь
-        if (way.path.length < wayLength) {
-            nearestExtension = extension;
-            wayLength = way.path.length;
+        //≈сли в хранилище есть место
+        if (extension.energy < extension.energyCapacity) {
+            //»змер€ю путь
+            var way = PathFinder.search(spawn.pos, extension.pos);
+            //—охран€ю наименьший путь
+            if (way.path.length < wayLength) {
+                nearestExtension = extension;
+                wayLength = way.path.length;
+            }
         }
     }
 
