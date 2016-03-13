@@ -1,4 +1,4 @@
-var ResourceTypes = require("Resource_Types");
+var FlagTypes = require("Flag_Types");
 
 module.exports = function(creep)
 {
@@ -6,7 +6,7 @@ module.exports = function(creep)
 }
 
 //Поиск ближайшего к родному спауну флага
-function selectNearestFlag(resource_type)
+function selectNearestFlag(flag_type)
 {
     var flagName;
     var wayLength = 999999;
