@@ -15,7 +15,10 @@ module.exports = function(creep)
         } else
         {
             var spawn = Game.spawns[creep.memory.spawnName];
-            creep.transferEnergy(spawn);
+            if (creep.transferEnergy(spawn) == -9)
+            {
+                creep.moveTo(spawn);
+            }
         }
     }
 }
