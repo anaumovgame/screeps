@@ -2,17 +2,18 @@ var FlagTypes = require("Flag_Types");
 
 module.exports = function(creep)
 {
+    var creepSpawnName = creep.memory.spawnName;
+    var spawn = Game.spawns[creepSpawnName];
     var nearestFlagName = selectNearestFlag(FlagTypes.ENERGY);
 }
 
-//Поиск ближайшего к родному спауну флага
+//Поиск ближайшего к спауну флага по типу
 function selectNearestFlag(flag_type)
 {
     var flagName;
     var wayLength = 999999;
 
-    var creepSpawnName = creep.memory.spawnName;
-    var spawn = Game.spawns[creepSpawnName];
+
 
     var flags = creep.room.find(FIND_FLAGS);
     for (var flagName in flags)
