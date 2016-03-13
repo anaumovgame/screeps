@@ -27,9 +27,11 @@ function harvestUnderFlag(creep, flag)
 function deliverResource(creep)
 {
     var spawn = Game.spawns[creep.memory.spawnName];
-    if (creep.transferEnergy(spawn) == -9)
-    {
-        creep.moveTo(spawn);
+    //Если спавн не полон - несём в спавнер
+    if (spawn.carry.energy < spawn.carryCapacity) {
+        if (creep.transferEnergy(spawn) == -9) {
+            creep.moveTo(spawn);
+        }
     }
 }
 
