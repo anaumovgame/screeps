@@ -5,7 +5,7 @@ var CreepController = require("Creep_Controller");
 
 module.exports.loop = function()
 {
-    Init();
+    //Init();
     SpawnController();
     CreepController();
 }
