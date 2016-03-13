@@ -119,6 +119,7 @@ function buildStructures(creep)
         if (creep.build(sites[0]) == -9) {
             creep.moveTo(sites[0]);
         }
+        return 1;
     }
 }
 
