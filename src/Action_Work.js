@@ -1,3 +1,8 @@
-/**
- * Created by Naumov on 13.03.2016.
- */
+var FlagTypes = require("Flag_Types");
+
+module.exports = function(creep)
+{
+    var creepSpawnName = creep.memory.spawnName;
+    var spawn = Game.spawns[creepSpawnName];
+    
+}
