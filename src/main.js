@@ -6,7 +6,7 @@ var ActionDo = require("Action_Do");
 module.exports.loop = function()
 {
     Init();
-    //SpawnController();
+    SpawnController();
 }
 
 function Init()
