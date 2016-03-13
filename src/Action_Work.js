@@ -17,10 +17,9 @@ module.exports = function(creep)
         } else
         //≈сли нечего строить - апргейдим рум-контроллер
         {
-            var roomController = creep.room.find(FIND_STRUCTURES);//, {filter: {}});
-            console.log(roomController.structureType);
-            if (creep.upgradeController(roomController[0]) == -9) {
-                creep.moveTo(roomController[0]);
+            var roomController = creep.room.controller;
+            if (creep.upgradeController(roomController) == -9) {
+                creep.moveTo(roomController);
             }
         }
     } else
