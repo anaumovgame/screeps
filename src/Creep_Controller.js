@@ -5,6 +5,13 @@ module.exports = function()
     for (var creepName in Game.creeps)
     {
         var creep = Game.creeps[creepName];
+
+        //ToDo: Вынести, это костыль
+         if (creep.ticksToLive < 200)
+         {
+             var spawn = Game.spawns[creep.memory.spawnName];
+             creep.moveTo(spawn);
+         }
         ActionList[creep.memory.actionName](creep);
     }
 }
