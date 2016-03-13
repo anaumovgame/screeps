@@ -5,6 +5,7 @@ module.exports = function(creep)
     var nearestFlagName = selectNearestFlag(ResourceTypes.ENERGY);
 }
 
+//Поиск ближайшего к родному спауну флага
 function selectNearestFlag(resource_type)
 {
     var flagName;
