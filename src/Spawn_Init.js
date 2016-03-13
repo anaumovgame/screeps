@@ -2,7 +2,7 @@ module.exports = function(spawnName, minerMax, workerMax, guardMax, healerMax)
 {
     //if (Game.spawns[spawnName].memory.isInit != true)
     {
-        console.log("Spawn init: " + spawnName + " : Population : " + minerMax + ", " + workerMax + ", " + guardMax + ", " + healerMax);
+        //console.log("Spawn init: " + spawnName + " : Population : " + minerMax + ", " + workerMax + ", " + guardMax + ", " + healerMax);
 
         Game.spawns[spawnName].memory.minerMax = minerMax;
         Game.spawns[spawnName].memory.workerMax = workerMax;
