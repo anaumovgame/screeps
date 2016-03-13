@@ -5,7 +5,7 @@ module.exports = function(){
         var bodyParts = [];
         for (var bodyPart in creep.body)
         {
-            bodyParts.push(bodyPart.type);
+            bodyParts.push(bodyPart);
         }
         console.log(creepName + " : " + bodyParts);
     }
