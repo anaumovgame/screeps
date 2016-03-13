@@ -19,14 +19,20 @@ module.exports = function(){
         console.log("2 - " + creepName + " : " + finalBody);
 
         //ќпредел€ю каких частей тела не хватает
-        for (var bodyPart in bodyParts)
+        for (var bodyPartNum in bodyParts)
         {
-            var elemIndex = finalBody.indexOf(bodyParts[bodyPart]);
-            console.log(bodyParts[bodyPart] + " " + elemIndex);
+            var elemIndex = finalBody.indexOf(bodyParts[bodyPartNum]);
+            console.log(bodyParts[bodyPartNum] + " " + elemIndex);
             if (elemIndex > -1) {
                 finalBody = finalBody.splice(elemIndex, 1);
             }
         }
         console.log("3 - " + creepName + " : " + finalBody);
+
+        //јпгрейдю крипу недостающие части
+        for (var bodyPartNum in finalBody)
+        {
+            
+        }
     }
 }
