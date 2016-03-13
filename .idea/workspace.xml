@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spawn_Const.js" afterPath="$PROJECT_DIR$/src/Spawn_Const.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spawn_CreepRenew.js" afterPath="$PROJECT_DIR$/src/Spawn_CreepRenew.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,31 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_CreepPopulationController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Spawn_CreepPopulationController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Creep_Miner.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creep_Miner.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action_Const.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Action_Const.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -113,11 +94,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_Const.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Spawn_Const.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12080537">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spawn_CreepUpgrader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Spawn_CreepUpgrader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spawn_CreepRenew.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Spawn_CreepRenew.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2818792">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -167,6 +168,7 @@
         <option value="$PROJECT_DIR$/src/Creep_Miner.js" />
         <option value="$PROJECT_DIR$/src/Action_Work.js" />
         <option value="$PROJECT_DIR$/src/Spawn_Const.js" />
+        <option value="$PROJECT_DIR$/src/Spawn_CreepRenew.js" />
       </list>
     </option>
   </component>
@@ -570,14 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spawn_CreepUpgrader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -684,8 +678,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12080537">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spawn_CreepUpgrader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spawn_CreepRenew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2818792">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
