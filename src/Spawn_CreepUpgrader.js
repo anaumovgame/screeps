@@ -22,7 +22,7 @@ module.exports = function(){
         for (var bodyPart in bodyParts)
         {
             var elemIndex = finalBody.indexOf(bodyPart);
-            console.log(elemIndex);
+            console.log(bodyPart + " " + elemIndex);
             if (elemIndex > -1) {
                 finalBody = finalBody.slice(elemIndex, 1);
             }
