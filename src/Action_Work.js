@@ -43,8 +43,8 @@ module.exports = function(creep)
     }
 }
 
-//Поиск ближайшего к крипу extension
-function selectNearestExtension(creep)
+//Поиск ближайшего к крипу extension с энергией
+function selectNearestExtensionWithEnergy(creep)
 {
     var nearestExtension;
     var wayLength = 999999;
