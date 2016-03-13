@@ -1,4 +1,3 @@
-var CreepConst = require("Creep_Const");
 var CreepClasses = require("Creep_Classes");
 
 module.exports = function(spawnName){
@@ -33,7 +32,7 @@ module.exports = function(spawnName){
         //Апгрейдю крипу недостающие части
         for (var bodyPartNum in finalBody)
         {
-            Game.spawns[spa]
+//            spawn.upgra
         }
     }
 }

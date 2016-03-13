@@ -6,6 +6,6 @@ module.exports = function()
     for (var spawnName in Game.spawns)
     {
         CreepPopulationController(spawnName);
-        CreepUpgrader(spawnName);
+        //CreepUpgrader(spawnName); //Недописан, т.к не спавнер апгрейдит крипов
     }
 }
