@@ -42,10 +42,10 @@ function deliverResource(creep)
 function findNearestExtension(creep)
 {
     var spawn = Game.spawns[creep.memory.spawnName];
-    var structures = spawn.room.find(FIND_MY_STRUCTURES);
-    for (var structure in structures)
+    var structures = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: Structure.extension }});
+    for (var structureNum in structures)
     {
-        console.log(structures[structure].structureType);
+        console.log(structures[structureNum].structureType);
     }
 }
 
