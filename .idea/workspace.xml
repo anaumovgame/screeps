@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Action_Work.js" afterPath="$PROJECT_DIR$/src/Action_Work.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
     </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +33,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action_Work.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Action_Work.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.18625277">
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
@@ -114,16 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_Const.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/Creep_Controller.js" />
         <option value="$PROJECT_DIR$/src/Spawn_Init.js" />
         <option value="$PROJECT_DIR$/src/Resource_Types.js" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/Action_Mine.js" />
         <option value="$PROJECT_DIR$/src/Creep_Worker.js" />
         <option value="$PROJECT_DIR$/src/Action_Const.js" />
@@ -167,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
         <option value="$PROJECT_DIR$/src/Creep_Classes.js" />
         <option value="$PROJECT_DIR$/src/Action_Work.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -407,14 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Spawn_Init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -496,6 +487,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18625277">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
