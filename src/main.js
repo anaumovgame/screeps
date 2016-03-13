@@ -5,7 +5,6 @@ var ActionDo = require("Action_Do");
 
 module.exports.loop = function()
 {
-    asd.prototype.
     Init();
     //SpawnController();
 }
