@@ -1,3 +1,5 @@
+var ActionList = require("Action_List");
+
 module.exports = function()
 {
     for (var creepName in Game.creeps)
