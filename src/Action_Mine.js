@@ -18,8 +18,8 @@ function selectNearestFlag(spawn, flag_type)
     {
         var flag = Game.flags[flagName];
         console.log(flag);
-        var path = PathFinder.search(spawn.pos, flag.pos);
-        console.log(path);
+        //var path = PathFinder.search(spawn.pos, flag.pos);
+        //console.log(path);
     }
 
     return flagName;
