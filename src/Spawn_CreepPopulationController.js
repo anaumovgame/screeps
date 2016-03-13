@@ -14,6 +14,10 @@ function reproducePopulation(spawnName, population)
     if (population.minerCount < Game.spawns[spawnName].memory.minerMax)
     {
         createCreep(spawnName, CreepConst.Creep_Miner);
+    } else
+    if (population.workerCount < Game.spawns[spawnName].memory.workerMax)
+    {
+        createCreep(spawnName, CreepConst.Creep_Miner);
     }
 }
 
