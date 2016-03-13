@@ -35,9 +35,11 @@ function deliverResource(creep)
     } else
     //Если спавн полон, то ищем ближайшее к нему свободное хранилище
     {
-        
+
     }
 }
+
+function findNearestExtension(creep)
 
 //Поиск ближайшего к спауну флага по типу
 function selectNearestFlag(spawn, flag_type)
