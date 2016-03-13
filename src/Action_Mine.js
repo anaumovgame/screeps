@@ -7,10 +7,7 @@ module.exports = function(creep)
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
     if (nearestFlag) {
         if (creep.carry.energy < creep.carryCapacity) {
-            var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: nearestFlag.pos}})[0];
-            if (creep.harvest(enegrySource) == -9) {
-                creep.moveTo(enegrySource);
-            }
+            harvestUnderFlag(nearestFlag);
         } else
         {
             var spawn = Game.spawns[creep.memory.spawnName];
@@ -19,6 +16,15 @@ module.exports = function(creep)
                 creep.moveTo(spawn);
             }
         }
+    }
+}
+
+//Копать ресурс под флагом
+function harvestUnderFlag(flag)
+{
+    var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
+    if (creep.harvest(enegrySource) == -9) {
+        creep.moveTo(enegrySource);
     }
 }
 
