@@ -3,6 +3,9 @@ module.exports = function(spawnName){
     for (var creepName in Game.creeps)
     {
         var creep = Game.creeps[creepName];
-        spawn.renewCreep(creep);
+        if (spawn.renewCreep(creep))
+        {
+            console.log(creep.name + " : Renew()");
+        }
     }
 }
