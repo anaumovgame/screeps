@@ -4,6 +4,6 @@ var ActionConst = require("Action_Const");
 module.exports = {
     name : "Miner",
     className : CreepConst.Creep_Miner,
-    body : [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE],
+    body : [WORK, WORK, CARRY, MOVE],
     actionName : ActionConst.Action_Mine,
 }
