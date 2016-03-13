@@ -5,10 +5,9 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlagName = selectNearestFlag(spawn, FlagTypes.ENERGY);
-
     if (creep.carry.energy < creep.carryCapacity)
     {
-        creep.room.find(FIND_SOURCES)
+        creep.room.find(FIND_SOURCES, {filter : {pos : } })
         creep.harvest()
     }
 }
@@ -16,7 +15,7 @@ module.exports = function(creep)
 //Поиск ближайшего к спауну флага по типу
 function selectNearestFlag(spawn, flag_type)
 {
-    var nearestFlagName;
+    var nearestFlag;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
@@ -30,11 +29,11 @@ function selectNearestFlag(spawn, flag_type)
             var way = PathFinder.search(spawn.pos, flag.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestFlagName = flag.name;
+                nearestFlag = flag;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestFlagName;
+    return nearestFlag;
 }
