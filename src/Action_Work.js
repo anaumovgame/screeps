@@ -6,7 +6,7 @@ module.exports = function(creep)
     var spawn = Game.spawns[creepSpawnName];
     var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
     console.log(sites[0]);
-    if (creep.energy > 0) {
+    if (creep.carry.energy > 0) {
         if (creep.build(sites[0]) == -9) {
             creep.moveTo(sites[0]);
         }
