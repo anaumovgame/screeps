@@ -35,7 +35,7 @@ module.exports = function(creep)
             }
         }
 
-        if (minerCount >= 4) {
+        if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
             if (spawn.transferEnergy(creep) == -9) {
                 creep.moveTo(spawn);
             }
