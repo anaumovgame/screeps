@@ -7,7 +7,7 @@ module.exports = function(creep)
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
     if (creep.carry.energy < creep.carryCapacity)
     {
-        var enegrySource = creep.room.find(FIND_SOURCES, {filter : {pos : nearestFlag.pos} });
+        var enegrySource = creep.room.find(FIND_SOURCES);//, {filter : {pos : nearestFlag.pos} });
 //        if (creep.harvest(enegrySource) == -6)
         {
             creep.moveTo(enegrySource);
