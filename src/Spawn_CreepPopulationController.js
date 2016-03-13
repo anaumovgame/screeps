@@ -20,7 +20,6 @@ function reproducePopulation(spawnName, population)
 
 function createCreep(spawnName, className)
 {
-
     var creepClass = CreepClasses[className];
     var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
     if (_.isString(creepName)) {
