@@ -4,7 +4,7 @@ var SpawnConst = require("Spawn_Const");
 
 module.exports = function(spawnName)
 {
-    console.log("Manage population spawn: " + spawnName);
+    //console.log("Manage population spawn: " + spawnName);
     var population = getSpawnPopulation(spawnName);
     reproducePopulation(spawnName, population);
 }
