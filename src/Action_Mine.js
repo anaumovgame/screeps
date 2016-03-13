@@ -10,7 +10,7 @@ module.exports = function(creep)
         if (creep.carry.energy < creep.carryCapacity) {
             var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: nearestFlag.pos}})[0];
             console.log(creep.harvest(enegrySource));
-            if (creep.harvest(enegrySource) == -6) {
+            if (creep.harvest(enegrySource) == -9) {
                 creep.moveTo(enegrySource);
             }
         }
