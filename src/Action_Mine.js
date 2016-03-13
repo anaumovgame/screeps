@@ -35,14 +35,8 @@ function deliverResource(creep)
     } else
     //Если спавн полон, то ищем ближайшее к нему свободное хранилище
     {
-        findNearestExtension(creep);
+        var nearestExtensions = selectNearestExtension(spawn);
     }
-}
-
-function findNearestExtension(creep)
-{
-    var spawn = Game.spawns[creep.memory.spawnName];
-    var nearestExtensions = selectNearestExtension(spawn);
 }
 
 //Поиск ближайшего к спауну extension
