@@ -21,7 +21,7 @@ module.exports = function(){
         //ќпредел€ю каких частей тела не хватает
         for (var bodyPart in bodyParts)
         {
-            elemIndex = finalBody.indexOf(bodyPart);
+            var elemIndex = finalBody.indexOf(bodyPart);
             if (elemIndex > -1) {
                 finalBody.slice(elemIndex);
             }
