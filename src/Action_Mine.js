@@ -43,7 +43,7 @@ function deliverResource(creep)
 }
 
 //Поиск ближайшего к спауну extension
-function selectNearestExtension(spawn)
+function selectNearestEmptyExtension(spawn)
 {
     var nearestExtension;
     var wayLength = 999999;
