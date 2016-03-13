@@ -25,7 +25,6 @@ module.exports = function(creep)
     } else
     {
         //ToDo: Убрать или перенести: Если Miner меньше нормы, то не тырить энергию
-
         var minerCount = 0;
         for (var name in Game.creeps)
         {
@@ -35,9 +34,17 @@ module.exports = function(creep)
             }
         }
 
-        if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
-            if (spawn.transferEnergy(creep) == -9) {
-                creep.moveTo(spawn);
+        var nearestExtension = selectNearestExtensionWithEnergy(creep);
+        if (nearestExtension)
+        {
+            if (nearestExtension.transferEnergy(creep) == -9) {
+                creep.moveTo(nearestExtension);
+            }
+        } else {
+            if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
+                if (spawn.transferEnergy(creep) == -9) {
+                    creep.moveTo(spawn);
+                }
             }
         }
     }
@@ -57,7 +64,7 @@ function selectNearestExtensionWithEnergy(creep)
         //Если в хранилище есть место
         if (extension.energy > 0) {
             //Измеряю путь
-            var way = PathFinder.search(spawn.pos, extension.pos);
+            var way = PathFinder.search(creep.pos, extension.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
                 nearestExtension = extension;
