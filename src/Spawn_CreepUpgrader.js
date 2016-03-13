@@ -15,6 +15,6 @@ module.exports = function(){
         console.log(creepName + " : " + bodyParts);
 
         //ќпредел€ю каким должно быть тело крипа
-        var finalBody = CreepClasses
+        var finalBody = CreepClasses[creep.memory.className].body;
     }
 }
