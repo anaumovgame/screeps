@@ -8,8 +8,17 @@ module.exports = function(creep)
     var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
 
     if (creep.carry.energy > 0) {
-        if (creep.build(sites[0]) == -9) {
-            creep.moveTo(sites[0]);
+        if (sites.length > 0)
+        {
+            if (creep.build(sites[0]) == -9) {
+                creep.moveTo(sites[0]);
+            }
+        } else
+        {
+            var roomController = creep.room.find(FIND_STRUCTURES, { filter: { structureType : CONTROLLER_STRUCTURES }});
+            if (creep.upgradeController(roomController[0]) == -9) {
+                creep.moveTo(roomController[0]);
+            }
         }
     } else
     {
