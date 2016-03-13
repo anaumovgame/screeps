@@ -4,6 +4,5 @@ module.exports = function()
     {
         var creep = Game.creeps[creepName];
         ActionList[creep.memory.actionName](creep);
-        creep.action(creep);
     }
 }
