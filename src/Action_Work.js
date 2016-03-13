@@ -34,7 +34,7 @@ module.exports = function(creep)
             {
                 minerCount++;
             }
-        } 
+        }
 
         if (minerCount >= 4) {
             if (spawn.transferEnergy(creep) == -9) {
