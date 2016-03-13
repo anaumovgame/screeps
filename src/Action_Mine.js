@@ -1,7 +1,9 @@
+var ResourceTypes = require("Resource_Types");
+
 module.exports = function(creep)
 {
     //console.log("Mine");
-    selectNearestFlag("Energy");
+    selectNearestFlag(RE);
 }
 
 function selectNearestFlag(resource_type)
