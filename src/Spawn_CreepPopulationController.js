@@ -24,7 +24,7 @@ function reproducePopulation(spawnName, population)
 function createCreep(spawnName, className)
 {
     var creepClass = CreepClasses[className];
-    var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
+    var creepName = Game.spawns[spawnName].createCreep(/*creepClass.body*/[MOVE], null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
     if (_.isString(creepName)) {
         console.log("Spawn : " + spawnName + " : Create creep : " + className );
     }
