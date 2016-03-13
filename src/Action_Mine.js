@@ -5,12 +5,12 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
-    if (creep.carry.energy < creep.carryCapacity)
-    {
-        var enegrySource = creep.room.find(FIND_SOURCES, {filter : {pos : nearestFlag.pos} })[0];
-        if (creep.harvest(enegrySource) == -6)
-        {
-            creep.moveTo(enegrySource);
+    if (nearestFlag) {
+        if (creep.carry.energy < creep.carryCapacity) {
+            var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: nearestFlag.pos}})[0];
+            if (creep.harvest(enegrySource) == -6) {
+                creep.moveTo(enegrySource);
+            }
         }
     }
 }
@@ -25,7 +25,7 @@ function selectNearestFlag(spawn, flag_type)
     var flags = spawn.room.find(FIND_FLAGS);
     for (var flagNum in flags)
     {
-        console.log("asd");
+        console.log(flags);
         var flag = flags[flagNum];
         //Если флаг соответствует ресурсу
         if (flag.name.indexOf(flag_type) > -1) {
