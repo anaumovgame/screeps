@@ -6,9 +6,12 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
 
+
+
     var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
 
     if (creep.carry.energy > 0) {
+        repairStructures();
         //Если есть что строить - строим
         if (sites.length > 0)
         {
@@ -79,5 +82,21 @@ function selectNearestExtensionWithEnergy(creep)
 
 function repairStructures()
 {
+    var structures = creep.room.find(FIND_MY_STRUCTURES);
 
+    if (creep.carry.energy > 0) {
+        //Если есть что чинить - чиним
+        if (structures.length > 0)
+        {
+            if (creep.build(structures[0]) == -9) {
+                creep.moveTo(structures[0]);
+            }
+        } else
+        //Если нечего строить - апргейдим рум-контроллер
+        {
+            var roomController = creep.room.controller;
+            if (creep.upgradeController(roomController) == -9) {
+                creep.moveTo(roomController);
+            }
+        }
 }
