@@ -20,7 +20,7 @@ function selectNearestFlag(spawn, flag_type)
     {
         var flag = flags[flagNum];
         //≈сли флаг соответствует ресурсу
-        if (flag.name.contains(flag_type)) {
+        if (flag.name.indexOf(flag_type) > -1) {
             //»змер€ю путь
             var way = PathFinder.search(spawn.pos, flag.pos);
             //—охран€ю наименьший путь
