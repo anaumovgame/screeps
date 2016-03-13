@@ -8,7 +8,7 @@ module.exports = function(creep)
     if (creep.carry.energy < creep.carryCapacity)
     {
         var enegrySource = creep.room.find(FIND_SOURCES, {filter : {pos : nearestFlag.pos} });
-        var asdsa = creep.harvest(enegrySource);
+        var asdsa = creep.harvest(enegrySource.name);
         console.log(enegrySource);
         if (creep.harvest(enegrySource) == -6)
         {
