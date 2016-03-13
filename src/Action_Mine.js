@@ -2,7 +2,7 @@ var FlagTypes = require("Flag_Types");
 
 module.exports = function(creep)
 {
-    var nearestFlagName = selectNearestFlag(ResourceTypes.ENERGY);
+    var nearestFlagName = selectNearestFlag(FlagTypes.ENERGY);
 }
 
 //Поиск ближайшего к родному спауну флага
