@@ -15,10 +15,10 @@ function selectNearestFlag(spawn, flag_type)
     var wayLength = 999999;
 
     var flags = spawn.room.find(FIND_FLAGS);
-    for (var flagName in flags)
+    for (var flagNum in flags)
     {
-        var flag = flags[flagName];
-        console.log(flagName);
+        var flag = flags[flagNum];
+        console.log(flagNum);
         var way = PathFinder.search(spawn.pos, flag.pos);
 
         if (way.path.length < wayLength)
