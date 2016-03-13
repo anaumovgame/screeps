@@ -1,3 +1,3 @@
-/**
- * Created by Naumov on 13.03.2016.
- */
+module.exports = {
+    Action_Mine : require("Action_Mine");
+}
