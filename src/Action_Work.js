@@ -11,11 +11,11 @@ module.exports = function(creep)
 
 
     if (creep.carry.energy > 0) {
-        if (repairStructures() == 1)
+        if (repairStructures(creep) == 1)
         {
 
         } else
-        if (buildStructures() == 1)
+        if (buildStructures(creep) == 1)
         {
 
         }
