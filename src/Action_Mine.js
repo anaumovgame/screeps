@@ -1,8 +1,7 @@
 module.exports = function(creep)
 {
     //console.log("Mine");
-    selectNearestFlag(Energy)
-
+    selectNearestFlag("Energy");
 }
 
 function selectNearestFlag(resource_type)
