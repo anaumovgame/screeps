@@ -12,10 +12,11 @@ module.exports = function(){
         {
             bodyParts.push(creep.body[bodyPart].type);
         }
-        console.log(creepName + " : " + bodyParts);
+        console.log("1 - " + creepName + " : " + bodyParts);
 
         //ќпредел€ю каким должно быть тело крипа
         var finalBody = CreepClasses[creep.memory.className].body;
+        console.log("2 - " + creepName + " : " + finalBody);
 
         //ќпредел€ю каких частей тела не хватает
         for (var bodyPart in bodyParts)
@@ -25,5 +26,6 @@ module.exports = function(){
                 finalBody.slice(elemIndex);
             }
         }
+        console.log("3 - " + creepName + " : " + finalBody);
     }
 }
