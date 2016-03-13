@@ -4,5 +4,5 @@ module.exports = function(creep)
 {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
-    
+    console.log("Work");
 }
