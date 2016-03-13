@@ -7,6 +7,6 @@ module.exports = function(){
         {
             bodyParts.push(bodyPart.type);
         }
-        //if (creep.memory.className)
+        console.log(bodyParts);
     }
 }
