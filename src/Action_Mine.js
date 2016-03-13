@@ -32,6 +32,10 @@ function deliverResource(creep)
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
+    } else
+    //Если спавн полон, то ищем ближайшее к нему свободное хранилище
+    {
+        
     }
 }
 
