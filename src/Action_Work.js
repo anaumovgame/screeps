@@ -1,4 +1,5 @@
 var FlagTypes = require("Flag_Types");
+var CreepConst = require("Creep_Const");
 
 module.exports = function(creep)
 {
@@ -12,6 +13,13 @@ module.exports = function(creep)
         }
     } else
     {
+        var minerCount = 0;
+        for (var name in Game.creeps)
+        {
+            if Game.creeps[name].memory.className = Creep.
+        }
+        
+
         if (spawn.transferEnergy(creep) == -9) {
             creep.moveTo(spawn);
         }
