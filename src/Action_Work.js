@@ -15,6 +15,7 @@ module.exports = function(creep)
             }
         } else
         {
+            console.log("sad");
             var roomController = creep.room.find(FIND_STRUCTURES, { filter: { structureType : CONTROLLER_STRUCTURES }});
             if (creep.upgradeController(roomController[0]) == -9) {
                 creep.moveTo(roomController[0]);
