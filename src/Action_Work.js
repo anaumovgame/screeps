@@ -121,6 +121,7 @@ function buildStructures(creep)
         }
         return 1;
     }
+    return 0;
 }
 
 function upgradeRoomController(creep) {
