@@ -14,6 +14,7 @@ function selectNearestFlag(spawn, flag_type)
     var nearestFlagName;
     var wayLength = 999999;
 
+    //Перебираю все флаги в комнате
     var flags = spawn.room.find(FIND_FLAGS);
     for (var flagNum in flags)
     {
