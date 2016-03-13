@@ -77,7 +77,7 @@ function selectNearestExtensionWithEnergy(creep)
     return nearestExtension;
 }
 
-function repairStructure()
+function repairStructures()
 {
 
 }
