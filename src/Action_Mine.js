@@ -5,7 +5,7 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlagName = selectNearestFlag(spawn, FlagTypes.ENERGY);
-    //console.log(nearestFlagName);
+    console.log(nearestFlagName);
 }
 
 //Поиск ближайшего к спауну флага по типу
