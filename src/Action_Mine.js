@@ -14,6 +14,7 @@ function selectNearestFlag(spawn, flag_type)
     var wayLength = 999999;
 
     var flags = spawn.room.find(FIND_FLAGS);
+    console.log(flags);
     for (var flagName in flags)
     {
         var flag = Game.flags[flagName];
