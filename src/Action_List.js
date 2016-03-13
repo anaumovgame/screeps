@@ -1,3 +1,3 @@
 module.exports = {
-    Action_Mine : require("Action_Mine");
+    Action_Mine : require("Action_Mine"),
 }
