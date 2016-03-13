@@ -8,6 +8,6 @@ module.exports = function()
     {
         CreepPopulationController(spawnName);
         //CreepUpgrader(spawnName); //Недописан, т.к не спавнер апгрейдит крипов
-        CreepRenewer(spawnName);
+        CreepRenewer(spawnName); 
     }
 }
