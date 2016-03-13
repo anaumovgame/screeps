@@ -13,9 +13,7 @@ function selectNearestFlag(spawn, flag_type)
     var flagName;
     var wayLength = 999999;
 
-
-
-    var flags = creep.room.find(FIND_FLAGS);
+    var flags = spawn.room.find(FIND_FLAGS);
     for (var flagName in flags)
     {
         var flag = Game.flags[flagName];
