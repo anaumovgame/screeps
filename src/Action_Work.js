@@ -14,6 +14,10 @@ module.exports = function(creep)
         if (repairStructures() == 1)
         {
 
+        } else
+        if (buildStructures() == 1)
+        {
+            
         }
     }
 
