@@ -25,6 +25,7 @@ function selectNearestFlag(spawn, flag_type)
     var flags = spawn.room.find(FIND_FLAGS);
     for (var flagNum in flags)
     {
+        console.log("asd");
         var flag = flags[flagNum];
         //Если флаг соответствует ресурсу
         if (flag.name.indexOf(flag_type) > -1) {
