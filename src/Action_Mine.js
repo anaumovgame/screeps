@@ -10,11 +10,7 @@ module.exports = function(creep)
             harvestUnderFlag(creep, nearestFlag);
         } else
         {
-            var spawn = Game.spawns[creep.memory.spawnName];
-            if (creep.transferEnergy(spawn) == -9)
-            {
-                creep.moveTo(spawn);
-            }
+            deliverResource(creep);
         }
     }
 }
@@ -25,6 +21,15 @@ function harvestUnderFlag(creep, flag)
     var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
     if (creep.harvest(enegrySource) == -9) {
         creep.moveTo(enegrySource);
+    }
+}
+
+function deliverResource(creep)
+{
+    var spawn = Game.spawns[creep.memory.spawnName];
+    if (creep.transferEnergy(spawn) == -9)
+    {
+        creep.moveTo(spawn);
     }
 }
 
