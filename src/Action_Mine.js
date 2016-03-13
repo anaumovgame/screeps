@@ -28,7 +28,7 @@ function deliverResource(creep)
 {
     var spawn = Game.spawns[creep.memory.spawnName];
     //Если спавн не полон - несём в спавнер
-    if (spawn.energy < spawn.carryCapacity) {
+    if (spawn.energy < spawn.energyCapacity) {
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
