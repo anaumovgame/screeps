@@ -101,12 +101,8 @@ function repairStructures(creep) {
             }
             return 1;
         } else
-        //≈сли нечего строить - апргейдим рум-контроллер
         {
-            var roomController = creep.room.controller;
-            if (creep.upgradeController(roomController) == -9) {
-                creep.moveTo(roomController);
-            }
+            return 0;
         }
     }
 }
