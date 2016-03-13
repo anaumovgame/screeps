@@ -16,5 +16,14 @@ module.exports = function(){
 
         //ќпредел€ю каким должно быть тело крипа
         var finalBody = CreepClasses[creep.memory.className].body;
+
+        //ќпредел€ю каких частей тела не хватает
+        for (var bodyPart in bodyParts)
+        {
+            elemIndex = finalBody.indexOf(bodyPart);
+            if (elemIndex > -1) {
+                finalBody.slice(elemIndex);
+            }
+        }
     }
 }
