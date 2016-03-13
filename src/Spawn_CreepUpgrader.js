@@ -7,6 +7,6 @@ module.exports = function(){
         {
             bodyParts.push(bodyPart.type);
         }
-        console.log(bodyParts);
+        console.log(creepName + " : " +bodyParts);
     }
 }
