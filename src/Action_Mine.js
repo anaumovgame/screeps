@@ -42,11 +42,33 @@ function deliverResource(creep)
 function findNearestExtension(creep)
 {
     var spawn = Game.spawns[creep.memory.spawnName];
-    var structures = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
-    for (var structureNum in structures)
+    var extensions = spawn.room.find
+}
+
+//Поиск ближайшего к спауну extension
+function selectNearestExtension(spawn, flag_type)
+{
+    var nearestExtension;
+    var wayLength = 999999;
+
+    //Перебираю все флаги в комнате
+    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    for (var flagNum in extensions)
     {
-        console.log(structures[structureNum].structureType);
+        var flag = extensions[flagNum];
+        //Если флаг соответствует ресурсу
+        if (flag.name.indexOf(flag_type) > -1) {
+            //Измеряю путь
+            var way = PathFinder.search(spawn.pos, flag.pos);
+            //Сохраняю наименьший путь
+            if (way.path.length < wayLength) {
+                nearestExtension = flag;
+                wayLength = way.path.length;
+            }
+        }
     }
+
+    return nearestExtension;
 }
 
 //Поиск ближайшего к спауну флага по типу
