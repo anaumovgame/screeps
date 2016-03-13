@@ -11,7 +11,6 @@ module.exports = function(spawnName)
 
 function reproducePopulation(spawnName, population)
 {
-
     if (population.minerCount < Game.spawns[spawnName].memory.minerMax)
     {
         createCreep(spawnName, CreepConst.Creep_Miner);
