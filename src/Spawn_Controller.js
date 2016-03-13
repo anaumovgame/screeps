@@ -1,5 +1,5 @@
 var CreepPopulationController = require("Spawn_CreepPopulationController");
-var CreepUpgrader = require("Spawn_CreepPopulationController");
+var CreepUpgrader = require("Spawn_CreepUpgrader");
 
 module.exports = function()
 {
