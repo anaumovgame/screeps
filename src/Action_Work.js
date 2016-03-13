@@ -17,7 +17,7 @@ module.exports = function(creep)
         } else
         if (buildStructures() == 1)
         {
-            
+
         }
     }
 
@@ -31,10 +31,7 @@ module.exports = function(creep)
         } else
         //≈сли нечего строить - апргейдим рум-контроллер
         {
-            var roomController = creep.room.controller;
-            if (creep.upgradeController(roomController) == -9) {
-                creep.moveTo(roomController);
-            }
+
         }
     } else
     {
@@ -90,7 +87,7 @@ function selectNearestExtensionWithEnergy(creep)
     return nearestExtension;
 }
 
-function repairStructures()
+function repairStructures(creep)
 {
     var structures = creep.room.find(FIND_MY_STRUCTURES);
 
@@ -122,3 +119,10 @@ function buildStructures(creep)
         }
     }
 }
+
+    function upgradeRoomController(creep){
+        var roomController = creep.room.controller;
+        if (creep.upgradeController(roomController) == -9) {
+            creep.moveTo(roomController);
+        }
+    }
