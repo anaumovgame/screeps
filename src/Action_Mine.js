@@ -5,6 +5,7 @@ module.exports = function(creep)
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlagName = selectNearestFlag(spawn, FlagTypes.ENERGY);
+    console.log(nearestFlagName);
 }
 
 //Поиск ближайшего к спауну флага по типу
@@ -18,7 +19,7 @@ function selectNearestFlag(spawn, flag_type)
     {
         var flag = flags[flagName];
         var way = PathFinder.search(spawn.pos, flag.pos);
-        //console.log(way.path);
+
         if (way.path.length < wayLength)
         {
             flagName = flag;
