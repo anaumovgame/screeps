@@ -40,6 +40,9 @@ function deliverResource(creep)
 }
 
 function findNearestExtension(creep)
+{
+    
+}
 
 //Поиск ближайшего к спауну флага по типу
 function selectNearestFlag(spawn, flag_type)
