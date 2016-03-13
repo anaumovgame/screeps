@@ -45,7 +45,7 @@ function findNearestExtension(creep)
     var structures = spawn.room.find(FIND_MY_STRUCTURES);
     for (var structure in structures)
     {
-        console.log(structure.structureType);
+        console.log(structures[structure].structureType);
     }
 }
 
