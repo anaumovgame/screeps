@@ -2,7 +2,7 @@ var CreepConst = require("Creep_Const");
 var CreepClasses = require("Creep_Classes");
 
 module.exports = function(spawnName){
-    spawn = Game.spawns[spawnName];
+    var spawn = Game.spawns[spawnName];
     for (var creepName in Game.creeps)
     {
         var creep = Game.creeps[creepName];
