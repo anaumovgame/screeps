@@ -25,7 +25,7 @@ module.exports = function(creep)
         if (minerCount == 4) {
             if (spawn.transferEnergy(creep) == -9) {
                 creep.moveTo(spawn);
-            }
+            } 
         }
     }
 }
