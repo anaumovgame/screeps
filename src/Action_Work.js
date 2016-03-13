@@ -25,7 +25,7 @@ module.exports = function(creep)
         }
     } else
     {
-        //ToDo: Убрать или перенести: Если Miner меньше нормы, тоне тырить энергию
+        //ToDo: Убрать или перенести: Если Miner меньше нормы, то не тырить энергию
 
         var minerCount = 0;
         for (var name in Game.creeps)
