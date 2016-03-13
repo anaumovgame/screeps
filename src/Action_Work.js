@@ -107,7 +107,7 @@ function repairStructures()
         }
 }
 
-function buildStructures()
+function buildStructures(creep)
 {
     var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
     //Если есть что строить - строим
