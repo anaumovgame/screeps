@@ -4,4 +4,4 @@ module.exports = {
     workerMax : 1,
     guardMax : 0,
     healerMax : 0,
-} 
+}
