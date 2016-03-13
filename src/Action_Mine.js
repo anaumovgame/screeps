@@ -18,7 +18,7 @@ function selectNearestFlag(spawn, flag_type)
     {
         var flag = flags[flagName];
         var way = PathFinder.search(spawn.pos, flag.pos);
-        console.log(way.path);
+        //console.log(way.path);
         if (way.path.length < wayLength)
         {
             flagName = flag;
