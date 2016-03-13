@@ -55,7 +55,7 @@ function selectNearestExtensionWithEnergy(creep)
         var extension = extensions[extensionNum];
 
         //≈сли в хранилище есть место
-        if (extension.energy < extension.energyCapacity) {
+        if (extension.energy > 0) {
             //»змер€ю путь
             var way = PathFinder.search(spawn.pos, extension.pos);
             //—охран€ю наименьший путь
