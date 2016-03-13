@@ -8,10 +8,16 @@ module.exports = function(creep)
 
 
 
-    var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
+
 
     if (creep.carry.energy > 0) {
-        repairStructures();
+        if (repairStructures() == 1)
+        {
+
+        }
+    }
+
+        var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
         //Если есть что строить - строим
         if (sites.length > 0)
         {
@@ -99,4 +105,16 @@ function repairStructures()
                 creep.moveTo(roomController);
             }
         }
+}
+
+function buildStructures()
+{
+    var sites = creep.room.find(FIND_CONSTRUCTION_SITES);
+    //Если есть что строить - строим
+    if (sites.length > 0)
+    {
+        if (creep.build(sites[0]) == -9) {
+            creep.moveTo(sites[0]);
+        }
+    }
 }
