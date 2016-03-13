@@ -41,7 +41,12 @@ function deliverResource(creep)
 
 function findNearestExtension(creep)
 {
-
+    var spawn = Game.spawns[creep.memory.spawnName];
+    var structures = spawn.room.find(FIND_MY_STRUCTURES);
+    for (var structure in structures)
+    {
+        Console.log(structure);
+    }
 }
 
 //Поиск ближайшего к спауну флага по типу
