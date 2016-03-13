@@ -12,7 +12,7 @@ module.exports = function(creep)
 function selectNearestFlag(spawn, flag_type)
 {
     var flagName = "";
-    /*var wayLength = 999999;
+    var wayLength = 999999;
 
     var flags = spawn.room.find(FIND_FLAGS);
     for (var flagName in flags)
@@ -20,13 +20,13 @@ function selectNearestFlag(spawn, flag_type)
         var flag = flags[flagName];
         var way = PathFinder.search(spawn.pos, flag.pos);
 
-        if (way.path.length < wayLength)
+    /*    if (way.path.length < wayLength)
         {
             console.log(flag.name);
             flagName = flag.name;
             wayLength = way.path.length;
-        }
+        }*/ 
     }
-*/
+
     return flagName;
 }
