@@ -1,11 +1,12 @@
 module.exports = function()
 {
 //TODO: ВСЁ ПЕРЕДЕЛАТЬ!!!
-
+    var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
+    var wall = selectLowHPWall(towers[0]);
 }
 
 //Поиск стены с меньшим ХП
-function selectNearestExtensionWithEnergy(tower)
+function selectLowHPWall(tower)
 {
     var room = tower.room;
     var lowHitWall;
