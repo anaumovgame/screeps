@@ -1,7 +1,7 @@
 module.exports = function()
 {
 //TODO: бя╗ оепедекюрэ!!!
-    var towers = Game.structures.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
+    var towers = Game.rooms.sim.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
     var wall = selectLowHPWall(towers[0]);
 }
 
