@@ -2,12 +2,14 @@ var SpawnConst = require("Spawn_Const");
 var SpawnInit = require("Spawn_Init");
 var SpawnController = require("Spawn_Controller");
 var CreepController = require("Creep_Controller");
+var TowerController = require("Tower_Controller");
 
 module.exports.loop = function()
 {
     Init();
     SpawnController();
     CreepController();
+    TowerController();
 }
 
 function Init()
