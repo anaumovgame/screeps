@@ -1,7 +1,7 @@
 module.exports = function()
 {
 //TODO: бя╗ оепедекюрэ!!!
-    var controller = Game.controller;
+    var controller = Game.controller[0];
     console.log(controller.room);
     var towers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
     console.log(towers);
