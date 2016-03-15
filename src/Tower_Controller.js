@@ -1,7 +1,8 @@
 module.exports = function()
 {
 //TODO: ВСЁ ПЕРЕДЕЛАТЬ!!!
-    var towers = Game.rooms.sim.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
+    var spawn = Game.spawns[0];
+    var towers = Game.structures.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
     var wall = selectLowHPWall(towers[0]);
 }
 
@@ -18,7 +19,7 @@ function selectLowHPWall(tower)
     for (var wallNum in walls) {
         var wall = walls[wallNum];
             //Измеряю HP стены
-            var wallHP = wall.hits; 
+            var wallHP = wall.hits;
             //Сохраняю башню с наименьшим ХП
             if (wallHP < minWallHP) {
                 lowHitWall = wall;
