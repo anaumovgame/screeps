@@ -2,8 +2,8 @@ module.exports = function()
 {
 //TODO: ВСЁ ПЕРЕДЕЛАТЬ!!!
     var creep = Game.creeps[0];
-    var towers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
-    var wall = selectLowHPWall(towers[0]);
+    /*var towers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
+    var wall = selectLowHPWall(towers[0]);*/
 }
 
 //Поиск стены с меньшим ХП
