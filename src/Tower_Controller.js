@@ -8,7 +8,7 @@ module.exports = function()
 function selectNearestExtensionWithEnergy(creep)
 {
     var nearestExtension;
-    var wayLength = 9999999;
+    var wayLength = 999999999;
 
     //Перебираю все флаги в комнате
     var walls = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "wall" }});
