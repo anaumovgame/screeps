@@ -1,8 +1,9 @@
 module.exports = function()
 {
 //TODO: бя╗ оепедекюрэ!!!
-    var creep = Game.creeps;
-    console.log(creep);
+    var controller = Game.controller;
+
+    console.log(creep.room);
     var towers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
     console.log(towers);
     //var wall = selectLowHPWall(Game.rooms[creep.room], towers[0]);
