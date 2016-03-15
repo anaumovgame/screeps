@@ -8,7 +8,7 @@ module.exports = function()
 function selectNearestExtensionWithEnergy(creep)
 {
     var lowHitWall;
-    var wayLength = 999999999;
+    var minWallHP = 999999999;
 
     //ѕеребираю все флаги в комнате
     var walls = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "wall" }});
@@ -17,9 +17,9 @@ function selectNearestExtensionWithEnergy(creep)
             //»змер€ю HP стены
             var wallHp = wall.hits;
             //—охран€ю башню с наименьшим ’ѕ
-            if (way.path.length < wayLength) {
+            if (wallHp < minWallHP) {
                 lowHitWall = wall;
-                wayLength = way.path.length;
+                minWallHP = way.path.length;
             }
         }
     }
