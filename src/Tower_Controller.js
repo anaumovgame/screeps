@@ -1,8 +1,8 @@
 module.exports = function()
 {
 //TODO: бя╗ оепедекюрэ!!!
-    var towers = Game.flags.find(FIND_FLAGS, {filter: { name: "HEAL" }});
-    console.log(towers);
+    //var towers = Game.flags.find(FIND_FLAGS, {filter: { name: "HEAL" }});
+    //console.log(towers);
     //var wall = selectLowHPWall(Game.rooms[creep.room], towers[0]);
 }
 
