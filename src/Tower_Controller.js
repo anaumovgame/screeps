@@ -2,7 +2,7 @@ module.exports = function()
 {
 //TODO: бя╗ оепедекюрэ!!!
     var spawn = Game.spawns[0];
-    var towers = Game.structures.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
+    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "tower" }});
     var wall = selectLowHPWall(towers[0]);
 }
 
