@@ -15,11 +15,11 @@ function selectNearestExtensionWithEnergy(creep)
     for (var wallNum in walls) {
         var wall = walls[wallNum];
             //»змер€ю HP стены
-            var wallHp = wall.hits;
+            var wallHP = wall.hits;
             //—охран€ю башню с наименьшим ’ѕ
-            if (wallHp < minWallHP) {
+            if (wallHP < minWallHP) {
                 lowHitWall = wall;
-                minWallHP = way.path.length;
+                minWallHP = wallHP;
             }
         }
     }
