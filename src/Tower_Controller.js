@@ -18,7 +18,7 @@ function selectLowHPWall(tower)
     for (var wallNum in walls) {
         var wall = walls[wallNum];
             //»змер€ю HP стены
-            var wallHP = wall.hits;
+            var wallHP = wall.hits; 
             //—охран€ю башню с наименьшим ’ѕ
             if (wallHP < minWallHP) {
                 lowHitWall = wall;
