@@ -5,13 +5,15 @@ module.exports = function()
 }
 
 //Поиск стены с меньшим ХП
-function selectNearestExtensionWithEnergy(creep)
+function selectNearestExtensionWithEnergy(tower)
 {
+    var room = tower.room;
     var lowHitWall;
     var minWallHP = 999999999;
 
+
     //Перебираю все флаги в комнате
-    var walls = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "wall" }});
+    var walls = room.find(FIND_MY_STRUCTURES, {filter: { structureType: "wall" }});
     for (var wallNum in walls) {
         var wall = walls[wallNum];
             //Измеряю HP стены
@@ -22,7 +24,6 @@ function selectNearestExtensionWithEnergy(creep)
                 minWallHP = wallHP;
             }
         }
-    }
 
     return lowHitWall;
 }
