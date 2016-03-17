@@ -15,7 +15,7 @@ module.exports = function()
 //Поиск стены с меньшим ХП
 function selectLowHPWall(room, tower)
 {
-    var lowHitWall;
+    var lowHitWall = null;
     var minWallHP = 999999999;
 
 
