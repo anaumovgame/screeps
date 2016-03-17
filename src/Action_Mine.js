@@ -52,7 +52,7 @@ function deliverResource(creep)
                 }
             } else {
                 var storage = creep.room.storage;
- 
+
             }
         }
     }
