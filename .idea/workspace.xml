@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.079822615">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -776,7 +776,7 @@
     <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.079822615">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
