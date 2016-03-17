@@ -32,27 +32,22 @@ function deliverResource(creep)
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
-    } else
-    {
+    } else {
         var nearestExtensions = selectNearestEmptyExtension(spawn);
         if (nearestExtensions != null) {
             if (creep.transferEnergy(nearestExtensions) == -9) {
                 creep.moveTo(nearestExtensions);
             }
-        }
-
-        var nearestTower = selectNearestEmptyTower(spawn);
-        if (nearestTower != null)
-        {
-            if (creep.transferEnergy(nearestTower) == -9) {
-                creep.moveTo(nearestTower);
-            }
         } else {
-            //Если спавн полон, то ищем ближайшее к нему свободное хранилище
-
-
+            var nearestTower = selectNearestEmptyTower(spawn);
+            if (nearestTower != null) {
+                if (creep.transferEnergy(nearestTower) == -9) {
+                    creep.moveTo(nearestTower);
+                }
+            }
         }
     }
+
 }
 
 //Поиск ближайшего к спауну Tower
