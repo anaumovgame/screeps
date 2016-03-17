@@ -80,7 +80,7 @@ function selectNearestEmptyTower(spawn)
 //Поиск ближайшего к спауну extension
 function selectNearestEmptyExtension(spawn)
 {
-    var nearestExtension;
+    var nearestExtension = null;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
