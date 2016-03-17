@@ -45,27 +45,27 @@ function deliverResource(creep)
 //Поиск ближайшего к спауну Tower
 function selectNearestEmptyTower(spawn)
 {
-    var nearestExtension;
+    var nearestTower;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
-    for (var extensionNum in extensions) {
-        var extension = extensions[extensionNum];
+    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    for (var towerNum in towers) {
+        var tower = towers[towerNum];
 
         //Если в хранилище есть место
-        if (extension.energy < extension.energyCapacity) {
+        if (tower.energy < tower.energyCapacity) {
             //Измеряю путь
-            var way = PathFinder.search(spawn.pos, extension.pos);
+            var way = PathFinder.search(spawn.pos, tower.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestExtension = extension;
+                nearestTower = tower;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestExtension;
+    return nearestTower;
 }
 
 //Поиск ближайшего к спауну extension
