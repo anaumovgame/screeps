@@ -2,7 +2,7 @@ module.exports = function(room)
 {
 //TODO: бя╗ оепедекюрэ!!!
     var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
-    //console.log(towers);
+    console.log(towers);
     //var wall = selectLowHPWall(Game.rooms[creep.room], towers[0]);
 }
 
