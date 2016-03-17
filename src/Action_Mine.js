@@ -47,7 +47,6 @@ function deliverResource(creep)
             }
         }
     }
-
 }
 
 //Поиск ближайшего к спауну Tower
