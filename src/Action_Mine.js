@@ -49,7 +49,7 @@ function selectNearestEmptyTower(spawn)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
     for (var towerNum in towers) {
         var tower = towers[towerNum];
 
