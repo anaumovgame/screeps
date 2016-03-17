@@ -1,7 +1,7 @@
 module.exports = {
     //Population
     minerMax : 4,
-    workerMax : 3,
+    workerMax : 3, 
     guardMax : 0,
     healerMax : 0,
 }
