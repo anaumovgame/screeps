@@ -33,11 +33,21 @@ function deliverResource(creep)
             creep.moveTo(spawn);
         }
     } else
-    //Если спавн полон, то ищем ближайшее к нему свободное хранилище
     {
-        var nearestExtensions = selectNearestEmptyExtension(spawn);
-        if (creep.transferEnergy(nearestExtensions) == -9) {
-            creep.moveTo(nearestExtensions);
+        var nearestTower = selectNearestEmptyTower();
+        if (nearestTower)
+        {
+            if (creep.transferEnergy(nearestTower) == -9) {
+                creep.moveTo(nearestTower);
+            }
+        } else {
+            //Если спавн полон, то ищем ближайшее к нему свободное хранилище
+
+            var nearestExtensions = selectNearestEmptyExtension(spawn);
+            if (creep.transferEnergy(nearestExtensions) == -9) {
+                creep.moveTo(nearestExtensions);
+            }
+
         }
     }
 }
