@@ -18,7 +18,7 @@ function selectLowHPWall(room, tower)
 
 
     //ѕеребираю все флаги в комнате
-    var walls = room.find(FIND_MY_STRUCTURES, {filter: { structureType: "wall" }});
+    var walls = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_WALL }});
     for (var wallNum in walls) {
         var wall = walls[wallNum];
             //»змер€ю HP стены
