@@ -28,6 +28,7 @@ module.exports = function(creep)
                 minerCount++;
             }
         }
+        minerCount = 0;
 
         var nearestExtension = selectNearestExtensionWithEnergy(creep);
         if (nearestExtension)
