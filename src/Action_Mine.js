@@ -34,6 +34,13 @@ function deliverResource(creep)
         }
     } else
     {
+        var nearestExtensions = selectNearestEmptyExtension(spawn);
+        if (nearestExtensions != null) {
+            if (creep.transferEnergy(nearestExtensions) == -9) {
+                creep.moveTo(nearestExtensions);
+            }
+        }
+
         var nearestTower = selectNearestEmptyTower(spawn);
         if (nearestTower != null)
         {
@@ -42,10 +49,7 @@ function deliverResource(creep)
             }
         } else {
             //Если спавн полон, то ищем ближайшее к нему свободное хранилище
-            var nearestExtensions = selectNearestEmptyExtension(spawn);
-            if (creep.transferEnergy(nearestExtensions) == -9) {
-                creep.moveTo(nearestExtensions);
-            }
+
 
         }
     }
