@@ -54,7 +54,7 @@ function deliverResource(creep)
 //Поиск ближайшего к спауну Tower
 function selectNearestEmptyTower(spawn)
 {
-    var nearestTower;
+    var nearestTower = null;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
