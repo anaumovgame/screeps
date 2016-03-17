@@ -43,7 +43,7 @@ function deliverResource(creep)
 }
 
 //Поиск ближайшего к спауну Tower
-function selectNearestEmptyExtension(spawn)
+function selectNearestEmptyTower(spawn)
 {
     var nearestExtension;
     var wayLength = 999999;
