@@ -7,7 +7,7 @@ module.exports = function()
         var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
         var tower = towers[0]
         var wall = selectLowHPWall(room, tower);
-        tower.repair(wall); 
+        tower.repair(wall);   
     }
 }
 
