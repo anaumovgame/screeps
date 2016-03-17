@@ -5,7 +5,8 @@ module.exports = function()
     {
         var room = Game.rooms[roomName];
         var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
-        var wall = selectLowHPWall(room, towers[0]);
+        var tower = towers[0]
+        var wall = selectLowHPWall(room, tower);
     }
 }
 
