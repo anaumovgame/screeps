@@ -35,7 +35,7 @@ function deliverResource(creep)
     } else
     {
         var nearestTower = selectNearestEmptyTower();
-        if (nearestTower)
+        if (nearestTower != null)
         {
             if (creep.transferEnergy(nearestTower) == -9) {
                 creep.moveTo(nearestTower);
