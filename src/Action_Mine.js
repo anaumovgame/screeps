@@ -27,14 +27,14 @@ function harvestUnderFlag(creep, flag)
 function deliverResource(creep)
 {
     var spawn = Game.spawns[creep.memory.spawnName];
-    var storage = creep.room.storage;
+    /*var storage = creep.room.storage;
     if (storage.energy < storage.energyCapacity) {
         if (creep.transferEnergy(storage) == -9) {
             creep.moveTo(storage);
         }
-    }
+    }*/
     //Если спавн не полон - несём в спавнер
-    /*if (spawn.energy < spawn.energyCapacity) {
+    if (spawn.energy < spawn.energyCapacity) {
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
@@ -52,10 +52,10 @@ function deliverResource(creep)
                 }
             } else {
                 var storage = creep.room.storage;
-
+ 
             }
         }
-    }*/
+    }
 }
 
 //Поиск ближайшего к спауну Tower
