@@ -9,7 +9,7 @@ module.exports.loop = function()
     Init();
     SpawnController();
     CreepController();
-    TowerController();
+    //TowerController();
 }
 
 function Init()
