@@ -20,6 +20,7 @@ function harvestUnderFlag(creep, flag)
 {
     var spawn = Game.spawns[creep.spawnName];
     var freeEnergy = selectNearestFreeEnergy(spawn);
+    console.log(freeEnergy);
     var enegrySource;
     if (freeEnergy != null)
     {
