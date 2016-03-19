@@ -143,7 +143,7 @@ function selectNearestFreeEnergy(spawn)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var energies = spawn.room.find(FIND_RESOURCE);
+    var energies = spawn.room.find(FIND_DROPPED_RESOURCES);
     for (var energyNum in energies)
     {
         var energy = energies[energyNum];
