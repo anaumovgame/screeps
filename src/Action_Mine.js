@@ -20,7 +20,15 @@ function harvestUnderFlag(creep, flag)
 {
     var spawn = Game.spawns[creep.spawnName];
     var freeEnergy = selectNearestFreeEnergy(spawn);
-    var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
+    var enegrySource = null;
+    if (freeEnergy != null)
+    {
+        enegrySource = freeEnergy;
+    } else
+    {
+        enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
+    }
+
     if (creep.harvest(enegrySource) == -9) {
         creep.moveTo(enegrySource);
     }
