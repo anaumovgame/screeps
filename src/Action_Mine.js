@@ -139,7 +139,7 @@ function selectNearestFlag(spawn, flag_type)
 //Поиск ближайшей к спавну свободной энергии
 function selectNearestFreeEnergy(spawn)
 {
-    var nearestFlag;
+    var nearestEnergy;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
@@ -153,11 +153,11 @@ function selectNearestFreeEnergy(spawn)
             var way = PathFinder.search(spawn.pos, flag.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestFlag; = flag;
+                nearestEnergy; = flag;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestFlag;;
+    return nearestEnergy;;
 }
