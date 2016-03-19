@@ -153,11 +153,11 @@ function selectNearestFreeEnergy(spawn)
             var way = PathFinder.search(spawn.pos, flag.pos);
             //—охран€ю наименьший путь
             if (way.path.length < wayLength) {
-                nearestFlag = flag;
+                nearestFlag; = flag;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestFlag;
+    return nearestFlag;;
 }
