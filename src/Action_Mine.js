@@ -2,7 +2,7 @@ var FlagTypes = require("Flag_Types");
 
 module.exports = function(creep)
 {
-    console.log("ok!!!");
+    console.log("ok");
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
