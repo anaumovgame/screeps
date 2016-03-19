@@ -19,7 +19,7 @@ module.exports = function(creep)
 function harvestUnderFlag(creep, flag)
 {
     var spawn = Game.spawns[creep.spawnName];
-    console.log(spawn);
+    console.log("ok");
 
     var enegrySource;
     var freeEnergy = selectNearestFreeEnergy(spawn);
