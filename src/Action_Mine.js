@@ -23,11 +23,11 @@ function harvestUnderFlag(creep, flag)
 
 
     var enegrySource;
-    var freeEnergy = selectNearestFreeEnergy(spawn);
+   /* var freeEnergy = selectNearestFreeEnergy(spawn);
     if (freeEnergy != null)
     {
         enegrySource = freeEnergy;
-    } else
+    } else*/
     {
         enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
     }
