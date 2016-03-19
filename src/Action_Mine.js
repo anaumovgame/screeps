@@ -18,6 +18,8 @@ module.exports = function(creep)
 //Копать ресурс под флагом
 function harvestUnderFlag(creep, flag)
 {
+    var spawn = Game.spawns[creep.spawnName];
+    var freeEnergy = selectNearestFreeEnergy(spawn);
     var enegrySource = creep.room.find(FIND_SOURCES, {filter: {pos: flag.pos}})[0];
     if (creep.harvest(enegrySource) == -9) {
         creep.moveTo(enegrySource);
