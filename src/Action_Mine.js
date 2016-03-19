@@ -139,25 +139,25 @@ function selectNearestFlag(spawn, flag_type)
 //Поиск ближайшей к спавну свободной энергии
 function selectNearestFreeEnergy(spawn)
 {
-    var nearestFlag;
+    var nearestEnergy = null;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var flags = spawn.room.find(FIND_FLAGS);
-    for (var flagNum in flags)
+    var energies = spawn.room.find(FIND_RESOURCE);
+    for (var energyNum in energies)
     {
-        var flag = flags[flagNum];
+        var energy = energies[energyNum];
         //Если флаг соответствует ресурсу
-        if (flag.name.indexOf(flag_type) > -1) {
+        //if (energy.name.indexOf(flag_type) > -1) {
             //Измеряю путь
-            var way = PathFinder.search(spawn.pos, flag.pos);
+            var way = PathFinder.search(spawn.pos, energy.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestFlag = flag;
+                nearestEnergy = energy;
                 wayLength = way.path.length;
             }
-        }
+        //}
     }
 
-    return nearestFlag;
+    return nearestEnergy;
 }
