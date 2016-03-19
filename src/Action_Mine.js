@@ -137,7 +137,7 @@ function selectNearestFlag(spawn, flag_type)
 }
 
 //Поиск ближайшей к спавну свободной энергии
-function selectNearestFlag(spawn, flag_type)
+function selectNearestFreeEnergy(spawn)
 {
     var nearestFlag;
     var wayLength = 999999;
