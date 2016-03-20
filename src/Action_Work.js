@@ -25,7 +25,7 @@ module.exports = function(creep)
                 creep.moveTo(nearestContainer);
             }
         } else {
-            if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
+            if (isSpawnWaitCreep(spawn)) {
                 var nearestExtension = selectNearestExtensionWithEnergy(creep);
                 if (nearestExtension) {
                     if (nearestExtension.transferEnergy(creep) == -9) {
