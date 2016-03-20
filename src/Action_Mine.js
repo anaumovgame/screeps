@@ -23,7 +23,7 @@ function harvestUnderFlag(creep, flag)
     //≈сли полон - прекращаю копать, несу домой
     if (creep.carry.energy == creep.carryCapacity) {
         creep.memory.state = CreepConst.Creep_State_Deliver;
-        creep.say("Deliver!");
+        creep.say("Delivering!");
         return;
     }
 
