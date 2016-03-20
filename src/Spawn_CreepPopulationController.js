@@ -102,6 +102,7 @@ function getBodyNum(maxCapacity)
     switch (maxCapacity) {
         case maxCapacity <= 300:
             return 0;
+            break;
         case maxCapacity <= 350:
             return 1;
         case maxCapacity <= 400:
