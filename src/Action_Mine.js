@@ -7,9 +7,10 @@ module.exports = function(creep)
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
     if (nearestFlag) {
-        if (creep.carry.energy < creep.carryCapacity) {
+        if (creep.memory.state == CreepConst.Creep_State_Harvest) {
             harvestUnderFlag(creep, nearestFlag);
         } else
+        if (creep.memory.state == CreepConst.Creep_State_Deliver) {
         {
             deliverResource(creep);
         }
