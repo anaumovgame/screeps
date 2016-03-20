@@ -1,4 +1,5 @@
 var FlagTypes = require("Flag_Types");
+var CreepConst = require("Creep_Const");
 
 module.exports = function(creep)
 {
@@ -18,8 +19,12 @@ module.exports = function(creep)
 //Копать ресурс под флагом
 function harvestUnderFlag(creep, flag)
 {
-    var spawn = Game.spawns[creep.spawnName];
+    //Если полон - прекращаю копать, несу домой
+    if (creep.carry.energy == creep.carryCapacity) {
+        creep.memory.state = Creep_
+    }
 
+    var spawn = Game.spawns[creep.spawnName];
 
     var enegrySource;
    /* var freeEnergy = selectNearestFreeEnergy(spawn);
