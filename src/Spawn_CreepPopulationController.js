@@ -101,20 +101,17 @@ function getBodyNum(maxCapacity)
 {
     console.log(maxCapacity);
     switch (maxCapacity) {
-        case maxCapacity <= 300:
-            console.log("sw 0");
+        case 300:
             return 0;
-            break;
-        case maxCapacity <= 350:
+        case 350:
             return 1;
-        case maxCapacity <= 400:
+        case 400:
             return 2;
-        case maxCapacity <= 450:
+        case 450:
             return 3;
-        case maxCapacity <= 500:
+        case 500:
             return 4;
-        case maxCapacity <= 550:
-            console.log("sw 5");
+        case 550:
             return 5;
 
         default:
