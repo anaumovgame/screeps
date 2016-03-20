@@ -146,7 +146,7 @@ function isSpawnWaitCreep(spawn)
     var creepCount = 0;
     for (var name in Game.creeps)
     {
-        if (Game.creeps[name].memory.className == CreepConst.Creep_Miner)
+        if (Game.creeps[name].memory.spawnName == spawn.name)
         {
             creepCount++;
         }
