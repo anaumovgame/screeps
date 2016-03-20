@@ -154,13 +154,18 @@ function isSpawnWaitCreep(creep)
     maxCreeps += spawn.memory.guardMax = guardMax;
     maxCreeps += spawn.memory.healerMax = healerMax;
 
-    //ToDo: Убрать или перенести: Если Miner меньше нормы, то не тырить энергию
     var creepCount = 0;
     for (var name in Game.creeps)
     {
         if (Game.creeps[name].memory.className == CreepConst.Creep_Miner)
         {
-            minerCount++;
+            creepCount++;
         }
+    }
+
+    if (creepCount < maxCreeps){
+        return true;
+    } else {
+        return false;
     }
 }
