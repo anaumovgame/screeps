@@ -30,8 +30,7 @@ module.exports = function(creep)
                     if (spawn.transferEnergy(creep) == -9) {
                         creep.moveTo(spawn);
                     }
-                } else
-                {
+                } else {
                     var nearestExtension = selectNearestExtensionWithEnergy(creep);
                     if (nearestExtension) {
                         if (nearestExtension.transferEnergy(creep) == -9) {
