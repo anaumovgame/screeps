@@ -5,7 +5,7 @@ module.exports = function()
     {
         var room = Game.rooms[roomName];
         var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
-        var tower = towers[0]
+        var tower = towers[0];
 
         var lowHitsStructure = selectLowHPStructure(room, tower);
         if (lowHitsStructure != null)
