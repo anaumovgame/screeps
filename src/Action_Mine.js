@@ -103,7 +103,7 @@ function selectNearestEmptyExtension(spawn)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
 
@@ -129,7 +129,7 @@ function selectNearestEmptyExtension(spawn)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_CONTAINER }});
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
 
