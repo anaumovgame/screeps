@@ -7,7 +7,7 @@ module.exports = {
     body : [[WORK, WORK, CARRY, MOVE], //0
         [WORK, WORK, CARRY, CARRY, MOVE], //1
         [WORK, WORK, WORK, CARRY, MOVE], //2
-        [WORK, WORK, WORK, CARRY, MOVE, MOVE], //3
+        [WORK, WORK, WORK, CARRY, CARRY, MOVE], //3
         [WORK, WORK, WORK, CARRY, CARRY, MOVE, MOVE], //4
         [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE], //5
     ],
