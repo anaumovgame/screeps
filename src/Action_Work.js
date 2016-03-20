@@ -29,13 +29,13 @@ module.exports = function(creep)
             }
         }
 
-        if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
-            var nearestContainer = selectNearestContainerWithEnergy(creep);
-            if (nearestContainer) {
-                if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
-                    creep.moveTo(nearestContainer);
-                }
-            } else {
+        var nearestContainer = selectNearestContainerWithEnergy(creep);
+        if (nearestContainer) {
+            if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
+                creep.moveTo(nearestContainer);
+            }
+        } else {
+            if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
                 var nearestExtension = selectNearestExtensionWithEnergy(creep);
                 if (nearestExtension) {
                     if (nearestExtension.transferEnergy(creep) == -9) {
@@ -46,6 +46,7 @@ module.exports = function(creep)
                         creep.moveTo(spawn);
                     }
                 }
+
             }
         }
     }
