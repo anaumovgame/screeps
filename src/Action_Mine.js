@@ -138,7 +138,7 @@ function selectNearestEmptyContainer(spawn)
         var container = containers[containerNum];
 
         //≈сли в хранилище есть место
-        if (container.energy < container.energyCapacity) {
+        if (container.store < container.storeCapacity) {
             //»змер€ю путь
             var way = PathFinder.search(spawn.pos, container.pos);
             //—охран€ю наименьший путь
