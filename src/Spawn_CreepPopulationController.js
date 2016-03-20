@@ -90,12 +90,11 @@ function getSpawnMaxCapacity(spawn)
     //Перебираю все флаги в комнате
     var extensions = spawn.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     var maxCapacity = spawn.energyCapacity;
-    console.log(maxCapacity);
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
         maxCapacity += extension.energyCapacity;
-        console.log(maxCapacity);
     }
+    return maxCapacity;
 }
 
 function getBodyNum(maxCapacity)
