@@ -39,6 +39,10 @@ function selectLowHPStructure(room, tower)
         //Сохраняю башню с наименьшим ХП
         if  (structure.hits < structure.hitsMax - 200)  {
             if (structure.structureType == "container")
+            {
+                lowHitStructure = structure;
+                return lowHitStructure;
+            }
             if (structureHits < minStructureHits) {
                 lowHitStructure = structure;
                 minStructureHits = structureHits;
