@@ -29,17 +29,18 @@ module.exports = function(creep)
             }
         }
 
-        var nearestExtension = selectNearestExtensionWithEnergy(creep);
-        if (nearestExtension)
-        {
-            if (nearestExtension.transferEnergy(creep) == -9) {
-                creep.moveTo(nearestExtension);
-            }
-        } else {
-            if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
+        if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
+
+            var nearestExtension = selectNearestExtensionWithEnergy(creep);
+            if (nearestExtension) {
+                if (nearestExtension.transferEnergy(creep) == -9) {
+                    creep.moveTo(nearestExtension);
+                }
+            } else {
                 if (spawn.transferEnergy(creep) == -9) {
                     creep.moveTo(spawn);
                 }
+
             }
         }
     }
