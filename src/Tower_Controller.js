@@ -11,6 +11,30 @@ module.exports = function()
     }
 }
 
+//Поиск структуры, которую надо чинить
+function selectLowHPStructure(room, tower)
+{
+    var lowHitWall = null;
+    var minWallHP = 999999999;
+
+
+    //Перебираю все флаги в комнате
+    var walls = room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_WALL }});
+    for (var wallNum in walls) {
+        var wall = walls[wallNum];
+        //Измеряю HP стены
+        var wallHP = wall.hits;
+        //Сохраняю башню с наименьшим ХП
+        if (wallHP < minWallHP) {
+            lowHitWall = wall;
+            minWallHP = wallHP;
+        }
+    }
+
+    return lowHitWall;
+}
+
+
 //Поиск стены с меньшим ХП
 function selectLowHPWall(room, tower)
 {
