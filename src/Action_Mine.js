@@ -22,6 +22,7 @@ function harvestUnderFlag(creep, flag)
     //Если полон - прекращаю копать, несу домой
     if (creep.carry.energy == creep.carryCapacity) {
         creep.memory.state = CreepConst.Creep_State_Deliver;
+        return;
     }
 
     var spawn = Game.spawns[creep.spawnName];
@@ -43,6 +44,12 @@ function harvestUnderFlag(creep, flag)
 
 function deliverResource(creep)
 {
+    //Если ресурсов нет - иду копать
+    if (creep.carry.energy == 0) {
+        creep.memory.state = CreepConst.Creep_State_Harvest;
+        return;
+    }
+
     var spawn = Game.spawns[creep.memory.spawnName];
     /*var storage = creep.room.storage;
     if (storage.energy < storage.energyCapacity) {
