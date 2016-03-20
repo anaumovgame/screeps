@@ -144,6 +144,7 @@ function upgradeRoomController(creep) {
     return 1;
 }
 
+//Если ожидает создания крипа - тру иначе фэлс
 function isSpawnWaitCreep(creep)
 {
     var creepSpawnName = creep.memory.spawnName;
