@@ -8,7 +8,7 @@ module.exports = {
         [WORK, WORK, CARRY, CARRY, MOVE], //1
         [WORK, WORK, CARRY, CARRY, MOVE, MOVE], //2
         [WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE], //3
-        [WORK, WORK, WORK, CARRY, CARRY, MOVE, MOVE], //4
+        [WORK, WORK, CARRY, CARRY, CARRY, CARRY, MOVE, MOVE], //4
         [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE], //5
     ],
     actionName : ActionConst.Action_Work,
