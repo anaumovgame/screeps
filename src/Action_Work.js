@@ -44,6 +44,32 @@ module.exports = function(creep)
     }
 }
 
+//Поиск ближайшего к крипу container с энергией
+function selectNearestExtensionWithEnergy(creep)
+{
+    var nearestExtension;
+    var wayLength = 999999;
+
+    //Перебираю все флаги в комнате
+    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    for (var extensionNum in extensions) {
+        var extension = extensions[extensionNum];
+
+        //Если в хранилище есть место
+        if (extension.energy > 0) {
+            //Измеряю путь
+            var way = PathFinder.search(creep.pos, extension.pos);
+            //Сохраняю наименьший путь
+            if (way.path.length < wayLength) {
+                nearestExtension = extension;
+                wayLength = way.path.length;
+            }
+        }
+    }
+
+    return nearestExtension;
+}
+
 //Поиск ближайшего к крипу extension с энергией
 function selectNearestExtensionWithEnergy(creep)
 {
