@@ -26,7 +26,7 @@ module.exports = function(creep)
             }
         } else {
             if (isSpawnWaitCreep(spawn) == false) {
-                if (spawn.energy >= 50) {
+                if (spawn.energy >= creep.energyCapacity) {
                     if (spawn.transferEnergy(creep) == -9) {
                         creep.moveTo(spawn);
                     }
