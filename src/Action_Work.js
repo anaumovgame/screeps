@@ -30,7 +30,6 @@ module.exports = function(creep)
         }
 
         if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
-
             var nearestExtension = selectNearestExtensionWithEnergy(creep);
             if (nearestExtension) {
                 if (nearestExtension.transferEnergy(creep) == -9) {
