@@ -32,7 +32,7 @@ function selectLowHPStructure(room, tower)
         var structure = structures[structureNum];
         //»змер€ю HP стены
         var structureHits = structure.hits;
-        console.log(structure + " : " + structureHits);
+        console.log(structure + " : " + structureHits + " / " + structure.hitsMax);
         //—охран€ю башню с наименьшим ’ѕ
         if ( (structure.hits < structure.hitsMax - 200) && (structureHits < minStructureHits)) {
             lowHitStructure = structure;
