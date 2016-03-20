@@ -27,16 +27,14 @@ module.exports = function(creep)
         } else {
             if (isSpawnWaitCreep(spawn) == false) {
                 /*var nearestExtension = selectNearestExtensionWithEnergy(creep);
-                if (nearestExtension) {
-                    if (nearestExtension.transferEnergy(creep) == -9) {
-                        creep.moveTo(nearestExtension);
-                    }
-                } else {*/
-                    if (spawn.transferEnergy(creep) == -9) {
-                        creep.moveTo(spawn);
-                    }
+                 if (nearestExtension) {
+                 if (nearestExtension.transferEnergy(creep) == -9) {
+                 creep.moveTo(nearestExtension);
+                 }
+                 } else {*/
+                if (spawn.transferEnergy(creep) == -9) {
+                    creep.moveTo(spawn);
                 }
-
             }
         }
     }
