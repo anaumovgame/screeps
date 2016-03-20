@@ -51,7 +51,7 @@ function selectNearestContainerWithEnergy(creep)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var containers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_STORAGE }});
+    var containers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_CONTAINER }});
     for (var containerNum in containers) {
         var container = containers[containerNum];
 
@@ -77,7 +77,7 @@ function selectNearestExtensionWithEnergy(creep)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_CONTAINER }});
+    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
 

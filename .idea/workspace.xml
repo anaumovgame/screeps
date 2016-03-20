@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="" />
+    <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Constants.js" afterPath="$PROJECT_DIR$/lib/Constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Action_Work.js" afterPath="$PROJECT_DIR$/src/Action_Work.js" />
+    </list>
     <ignored path="screeps.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="Action_Work.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7124183">
-              <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+            <state vertical-scroll-proportion="0.18954249">
+              <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -35,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/lib/Constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="475" column="6" selection-start-line="475" selection-start-column="6" selection-end-line="475" selection-end-column="6" />
+              <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -167,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/Spawn_Const.js" />
         <option value="$PROJECT_DIR$/src/Spawn_Controller.js" />
         <option value="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
+        <option value="$PROJECT_DIR$/lib/Constants.js" />
         <option value="$PROJECT_DIR$/src/Action_Work.js" />
       </list>
     </option>
@@ -759,15 +763,15 @@
     <entry file="file://$PROJECT_DIR$/lib/Constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="475" column="6" selection-start-line="475" selection-start-column="6" selection-end-line="475" selection-end-column="6" />
+          <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7124183">
-          <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.18954249">
+          <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
           <folding />
         </state>
       </provider>
