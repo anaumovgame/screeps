@@ -1,8 +1,7 @@
 var FlagTypes = require("Flag_Types");
 var CreepConst = require("Creep_Const");
 
-module.exports = function(creep)
-{
+module.exports = function(creep) {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
     var nearestFlag = selectNearestFlag(spawn, FlagTypes.ENERGY);
@@ -15,6 +14,7 @@ module.exports = function(creep)
                 deliverResource(creep);
             }
         }
+    }
 }
 
 //Копать ресурс под флагом
