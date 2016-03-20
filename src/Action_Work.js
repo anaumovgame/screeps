@@ -64,7 +64,7 @@ function selectNearestContainerWithEnergy(creep)
 
         console.log("В ханилище : " + container.store.energy);
         //Если в хранилище есть энергия
-        if (container.store > 0) {
+        if (container.store.energy > 0) {
             //Измеряю путь
             var way = PathFinder.search(creep.pos, container.pos);
             //Сохраняю наименьший путь
