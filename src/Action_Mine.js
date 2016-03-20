@@ -68,7 +68,7 @@ function deliverResource(creep)
                     if (creep.transferEnergy(nearestTower) == -9) {
                         creep.moveTo(nearestTower);
                     }
-                } 
+                }
             }
         }
     }
