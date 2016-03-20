@@ -27,7 +27,7 @@ function selectLowHPStructure(room, tower)
 
 
     var structures = room.find(FIND_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
-    var myStructures = room.find(FIND_MY_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
+    //var myStructures = room.find(FIND_MY_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
     //structures = structures.concat(myStructures);
     //structures = myStructures;
     for (var structureNum in structures) {
