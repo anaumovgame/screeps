@@ -143,3 +143,8 @@ function upgradeRoomController(creep) {
     }
     return 1;
 }
+
+function isSpawnWaitCreep(creep)
+{
+
+}
