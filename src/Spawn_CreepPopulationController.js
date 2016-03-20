@@ -24,7 +24,13 @@ function reproducePopulation(spawnName, population)
 function createCreep(spawnName, className)
 {
     var creepClass = CreepClasses[className];
-    var creepName = Game.spawns[spawnName].createCreep(creepClass.body, null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
+    var spawn = Game.spawns[spawnName];
+
+    //ќпредел€ю какого крипа создавать в зависимости от возможностей спавнера
+    var spawnMaxEnergy = getSpawnMaxCapacity(spawn);
+    var bodyNum = getBodyNum(spawnMaxEnergy);
+    var body = creepClass.body[bodyNum];
+    var creepName = spawn.createCreep(body, null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
     //var creepName = Game.spawns[spawnName].createCreep(/*creepClass.body*/[WORK, CARRY, MOVE], null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
     if (_.isString(creepName)) {
         console.log("Spawn : " + spawnName + " : Create creep : " + className );
@@ -74,5 +80,37 @@ function isClassName(creep, className)
     } else
     {
         return false;
+    }
+}
+
+function getSpawnMaxCapacity(spawn)
+{
+    //ѕеребираю все флаги в комнате
+    var extensions = spawn.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
+    var maxCapacity = spawn.energyCapacity;
+    for (var extensionNum in extensions) {
+        var extension = extensions[extensionNum];
+        maxCapacity += extension.energyCapacity;
+    }
+}
+
+function getBodyNum(maxCapacity)
+{
+    switch (maxCapacity) {
+        case maxCapacity <= 300:
+            return 0;
+        case maxCapacity <= 350:
+            return 1;
+        case maxCapacity <= 400:
+            return 2;
+        case maxCapacity <= 450:
+            return 3;
+        case maxCapacity <= 500:
+            return 4;
+        case maxCapacity <= 550:
+            return 5;
+
+        default:
+            return 5;
     }
 }
