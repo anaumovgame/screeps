@@ -99,6 +99,7 @@ function getSpawnMaxCapacity(spawn)
 
 function getBodyNum(maxCapacity)
 {
+    console.log(maxCapacity);
     switch (maxCapacity) {
         case maxCapacity <= 300:
             return 0;
