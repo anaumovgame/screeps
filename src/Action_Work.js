@@ -62,7 +62,7 @@ function selectNearestContainerWithEnergy(creep)
     for (var containerNum in containers) {
         var container = containers[containerNum];
 
-
+        
         //Если в хранилище есть место
         if (container.store > 0) {
             //Измеряю путь
