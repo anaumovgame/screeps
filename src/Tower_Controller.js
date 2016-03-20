@@ -27,10 +27,12 @@ function selectLowHPStructure(room, tower)
 
     //ѕеребираю все флаги в комнате
     var structures = room.find(FIND_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
+    console.log(structures.length);
     for (var structureNum in structures) {
         var structure = structures[structureNum];
         //»змер€ю HP стены
         var structureHits = structure.hits;
+        console.log(structure + " : " + structureHits);
         //—охран€ю башню с наименьшим ’ѕ
         if ( (structure.hits < structure.hitsMax - 200) && (structureHits < minStructureHits)) {
             lowHitStructure = structure;
