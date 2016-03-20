@@ -6,8 +6,15 @@ module.exports = function()
         var room = Game.rooms[roomName];
         var towers = room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
         var tower = towers[0]
-        var wall = selectLowHPWall(room, tower);
-        tower.repair(wall);
+
+        var lowHitsStructure = selectLowHPStructure(room, tower);
+        if (lowHitsStructure != null)
+        {
+            tower.repair(lowHitsStructure);
+        } else {
+            var wall = selectLowHPWall(room, tower);
+            tower.repair(wall);
+        }
     }
 }
 
