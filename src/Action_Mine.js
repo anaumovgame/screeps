@@ -9,12 +9,12 @@ module.exports = function(creep)
     if (nearestFlag) {
         if (creep.memory.state == CreepConst.Creep_State_Harvest) {
             harvestUnderFlag(creep, nearestFlag);
-        } else
-        if (creep.memory.state == CreepConst.Creep_State_Deliver) {
-        {
-            deliverResource(creep);
         }
-    }
+        else if (creep.memory.state == CreepConst.Creep_State_Deliver) {
+            {
+                deliverResource(creep);
+            }
+        }
 }
 
 //Копать ресурс под флагом
