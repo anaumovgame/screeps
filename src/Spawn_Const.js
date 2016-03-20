@@ -3,5 +3,5 @@ module.exports = {
     minerMax : 3,
     workerMax : 1,
     guardMax : 0,
-    healerMax : 0,
+    healerMax : 0, 
 }

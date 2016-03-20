@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a789ce46-8fdd-4a1c-b259-30171e89fd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Action_Work.js" afterPath="$PROJECT_DIR$/src/Action_Work.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spawn_Const.js" afterPath="$PROJECT_DIR$/src/Spawn_Const.js" />
     </list>
     <ignored path="screeps.iws" />
@@ -25,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Action_Work.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Action_Work.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6013072">
+            <state vertical-scroll-proportion="0.0">
               <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
@@ -85,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spawn_Const.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Spawn_Const.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.13071896">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -171,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/Spawn_CreepPopulationController.js" />
         <option value="$PROJECT_DIR$/lib/Constants.js" />
         <option value="$PROJECT_DIR$/src/Action_Mine.js" />
-        <option value="$PROJECT_DIR$/src/Spawn_Const.js" />
         <option value="$PROJECT_DIR$/src/Action_Work.js" />
+        <option value="$PROJECT_DIR$/src/Spawn_Const.js" />
       </list>
     </option>
   </component>
@@ -762,18 +760,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
+    <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action_Work.js">
+    <entry file="file://$PROJECT_DIR$/src/Spawn_Const.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6013072">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13071896">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
