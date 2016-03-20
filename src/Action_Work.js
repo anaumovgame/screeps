@@ -137,8 +137,6 @@ function upgradeRoomController(creep) {
 //Если ожидает создания крипа - true иначе false
 function isSpawnWaitCreep(spawn)
 {
-    var creepSpawnName = creep.memory.spawnName;
-    var spawn = Game.spawns[creepSpawnName];
     var maxCreeps = 0;
     maxCreeps += spawn.memory.minerMax = minerMax;
     maxCreeps += spawn.memory.workerMax = workerMax;
