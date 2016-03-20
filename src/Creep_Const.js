@@ -6,4 +6,5 @@ module.exports = {
     Creep_Healer  : "Creep_Healer",
 
     Creep_State_Harvest : "harvest",
+    Creep_State_Deliver : "deliver",
 }
