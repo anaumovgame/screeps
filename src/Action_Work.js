@@ -30,14 +30,21 @@ module.exports = function(creep)
         }
 
         if (minerCount >= Game.spawns[creep.memory.spawnName].memory.minerMax) {
-            var nearestExtension = selectNearestExtensionWithEnergy(creep);
-            if (nearestExtension) {
-                if (nearestExtension.transferEnergy(creep) == -9) {
-                    creep.moveTo(nearestExtension);
+            var nearestContainer = selectNearestContainerWithEnergy(creep);
+            if (nearestContainer) {
+                if (nearestContainer.transferEnergy(creep) == -9) {
+                    creep.moveTo(nearestContainer);
                 }
             } else {
-                if (spawn.transferEnergy(creep) == -9) {
-                    creep.moveTo(spawn);
+                var nearestExtension = selectNearestExtensionWithEnergy(creep);
+                if (nearestExtension) {
+                    if (nearestExtension.transferEnergy(creep) == -9) {
+                        creep.moveTo(nearestExtension);
+                    }
+                } else {
+                    if (spawn.transferEnergy(creep) == -9) {
+                        creep.moveTo(spawn);
+                    }
                 }
             }
         }
