@@ -45,29 +45,29 @@ module.exports = function(creep)
 }
 
 //Поиск ближайшего к крипу container с энергией
-function selectNearestExtensionWithEnergy(creep)
+function selectNearestContainerWithEnergy(creep)
 {
-    var nearestExtension;
+    var nearestContainer;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
-    for (var extensionNum in extensions) {
-        var extension = extensions[extensionNum];
+    var containers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    for (var containerNum in containers) {
+        var container = containers[containerNum];
 
         //Если в хранилище есть место
-        if (extension.energy > 0) {
+        if (container.energy > 0) {
             //Измеряю путь
-            var way = PathFinder.search(creep.pos, extension.pos);
+            var way = PathFinder.search(creep.pos, container.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestExtension = extension;
+                nearestContainer = container;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestExtension;
+    return nearestContainer;
 }
 
 //Поиск ближайшего к крипу extension с энергией
@@ -77,7 +77,7 @@ function selectNearestExtensionWithEnergy(creep)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "extension" }});
+    var extensions = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
 
