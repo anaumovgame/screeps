@@ -133,7 +133,7 @@ function selectNearestEmptyContainer(spawn)
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var containers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_CONTAINER }});
+    var containers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: "container" }});
     for (var containerNum in containers) {
         var container = containers[containerNum];
 
