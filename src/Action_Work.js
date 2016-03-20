@@ -59,9 +59,10 @@ function selectNearestContainerWithEnergy(creep)
 
     //Перебираю все флаги в комнате
     var containers = creep.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_CONTAINER }});
+    console.log(containers);
     for (var containerNum in containers) {
         var container = containers[containerNum];
-        console.log(container);
+
 
         //Если в хранилище есть место
         if (container.energy > 0) {
