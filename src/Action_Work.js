@@ -138,10 +138,10 @@ function upgradeRoomController(creep) {
 function isSpawnWaitCreep(spawn)
 {
     var maxCreeps = 0;
-    maxCreeps += spawn.memory.minerMax = minerMax;
-    maxCreeps += spawn.memory.workerMax = workerMax;
-    maxCreeps += spawn.memory.guardMax = guardMax;
-    maxCreeps += spawn.memory.healerMax = healerMax;
+    maxCreeps += spawn.memory.minerMax;
+    maxCreeps += spawn.memory.workerMax;
+    maxCreeps += spawn.memory.guardMax;
+    maxCreeps += spawn.memory.healerMax;
 
     var creepCount = 0;
     for (var name in Game.creeps)
