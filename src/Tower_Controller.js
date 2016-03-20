@@ -26,8 +26,9 @@ function selectLowHPStructure(room, tower)
     var minStructureHits = 999999999;
 
 
-    //Перебираю все флаги в комнате
     var structures = room.find(FIND_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
+    var myStructures = room.find(FIND_MY_STRUCTURES);//, {filter: { structureType: STRUCTURE_WALL }});
+    structure = structure.concat(myStructures)
     console.log(structures.length);
     for (var structureNum in structures) {
         var structure = structures[structureNum];
