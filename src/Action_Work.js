@@ -40,7 +40,6 @@ module.exports = function(creep)
                 if (spawn.transferEnergy(creep) == -9) {
                     creep.moveTo(spawn);
                 }
-
             }
         }
     }
