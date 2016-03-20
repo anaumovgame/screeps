@@ -36,7 +36,7 @@ function createCreep(spawnName, className)
         console.log("Spawn : " + spawnName + " : Create creep : " + className );
     }
 }
- 
+
 function getSpawnPopulation(spawnName)
 {
     var minerCount = 0;
