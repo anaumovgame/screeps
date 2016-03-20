@@ -57,18 +57,18 @@ function deliverResource(creep)
                 creep.moveTo(nearestExtensions);
             }
         } else {
-            var nearestTower = selectNearestEmptyTower(spawn);
-            if (nearestTower != null) {
-                if (creep.transferEnergy(nearestTower) == -9) {
-                    creep.moveTo(nearestTower);
+            var nearestContainer = selectNearestEmptyContainer(spawn);
+            if (nearestContainer != null) {
+                if (creep.transferEnergy(nearestContainer) == -9) {
+                    creep.moveTo(nearestContainer);
                 }
             } else {
-                var nearestContainer = selectNearestEmptyContainer(spawn);
-                if (nearestContainer != null) {
-                    if (creep.transferEnergy(nearestContainer) == -9) {
-                        creep.moveTo(nearestContainer);
+                var nearestTower = selectNearestEmptyTower(spawn);
+                if (nearestTower != null) {
+                    if (creep.transferEnergy(nearestTower) == -9) {
+                        creep.moveTo(nearestTower);
                     }
-                }
+                } 
             }
         }
     }
