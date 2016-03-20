@@ -25,7 +25,7 @@ module.exports = function(creep)
                 creep.moveTo(nearestContainer);
             }
         } else {
-            if (isSpawnWaitCreep(spawn)) {
+            if (isSpawnWaitCreep(spawn) == false) {
                 var nearestExtension = selectNearestExtensionWithEnergy(creep);
                 if (nearestExtension) {
                     if (nearestExtension.transferEnergy(creep) == -9) {
