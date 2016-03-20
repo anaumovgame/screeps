@@ -9,6 +9,6 @@ module.exports = function(spawnName, minerMax, workerMax, guardMax, healerMax)
         Game.spawns[spawnName].memory.guardMax = guardMax;
         Game.spawns[spawnName].memory.healerMax = healerMax;
 
-        Game.spawns[spawnName].memory.isInit = true;
+        Game.spawns[spawnName].memory.isInit = true; 
     }
 }
