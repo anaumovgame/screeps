@@ -151,10 +151,8 @@ function isSpawnWaitCreep(spawn)
     }
 
     if (creepCount < maxCreeps){
-        console.log("true : " + creepCount + " : " + maxCreeps);
         return true;
     } else {
-        console.log("false : " + creepCount + " : " + maxCreeps);
         return false;
     }
 }

@@ -24,7 +24,7 @@ function Init()
     //console.log("------------============ INIT ============------------");
 
     //Spawn init
-    SpawnInit("S1", 3, 2, 0, 0); 
+    SpawnInit("S1", 3, 2, 0, 0);
     //SpawnInit("S2", minerMax, workerMax, guardMax, healerMax);
 
     //console.log("------------========== INIT DONE ==========------------");
