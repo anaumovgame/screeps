@@ -28,7 +28,9 @@ function createCreep(spawnName, className)
 
     //Определяю какого крипа создавать в зависимости от возможностей спавнера
     var spawnMaxEnergy = getSpawnMaxCapacity(spawn);
+    console.log(spawnMaxEnergy);
     var bodyNum = getBodyNum(spawnMaxEnergy);
+    console.log(bodyNum);
     var body = creepClass.body[bodyNum];
     var creepName = spawn.createCreep(body, null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
     //var creepName = Game.spawns[spawnName].createCreep(/*creepClass.body*/[WORK, CARRY, MOVE], null, {className : creepClass.className, spawnName : spawnName, actionName : creepClass.actionName});
