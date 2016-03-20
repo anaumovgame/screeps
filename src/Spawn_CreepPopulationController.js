@@ -25,7 +25,7 @@ function createCreep(spawnName, className)
 {
     var creepClass = CreepClasses[className];
     var spawn = Game.spawns[spawnName];
-    console.log(spawn); 
+    console.log(spawn);
     //ќпредел€ю какого крипа создавать в зависимости от возможностей спавнера
     var spawnMaxEnergy = getSpawnMaxCapacity(spawn);
     console.log(spawnMaxEnergy);
@@ -90,9 +90,11 @@ function getSpawnMaxCapacity(spawn)
     //ѕеребираю все флаги в комнате
     var extensions = spawn.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     var maxCapacity = spawn.energyCapacity;
+    console.log(maxCapacity);
     for (var extensionNum in extensions) {
         var extension = extensions[extensionNum];
         maxCapacity += extension.energyCapacity;
+        console.log(maxCapacity);
     }
 }
 
