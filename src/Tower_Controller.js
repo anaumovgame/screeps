@@ -15,7 +15,7 @@ module.exports = function()
 function selectLowHPStructure(room, tower)
 {
     var lowHitStructure = null;
-    var minWallHP = 999999999;
+    var minStructureHits = 999999999;
 
 
     //ѕеребираю все флаги в комнате
@@ -25,9 +25,9 @@ function selectLowHPStructure(room, tower)
         //»змер€ю HP стены
         var structureHits = structure.hits;
         //—охран€ю башню с наименьшим ’ѕ
-        if ( (structure.hits < structure.hitsMax - 200) && (structureHits < minWallHP)) {
+        if ( (structure.hits < structure.hitsMax - 200) && (structureHits < minStructureHits)) {
             lowHitStructure = structure;
-            minWallHP = structureHits;
+            minStructureHits = structureHits;
         }
     }
 
