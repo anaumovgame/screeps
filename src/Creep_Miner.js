@@ -12,4 +12,5 @@ module.exports = {
         [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE], //5
     ],
     actionName : ActionConst.Action_Mine,
+    state : "harvest",
 }
