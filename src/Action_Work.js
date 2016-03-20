@@ -19,16 +19,6 @@ module.exports = function(creep)
         }
     } else
     {
-        //ToDo: Убрать или перенести: Если Miner меньше нормы, то не тырить энергию
-        var minerCount = 0;
-        for (var name in Game.creeps)
-        {
-            if (Game.creeps[name].memory.className == CreepConst.Creep_Miner)
-            {
-                minerCount++;
-            }
-        }
-
         var nearestContainer = selectNearestContainerWithEnergy(creep);
         if (nearestContainer) {
             if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
@@ -145,7 +135,7 @@ function upgradeRoomController(creep) {
 }
 
 //Если ожидает создания крипа - true иначе false
-function isSpawnWaitCreep(creep)
+function isSpawnWaitCreep(spawn)
 {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
