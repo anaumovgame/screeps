@@ -46,7 +46,7 @@ function deliverResource(creep)
 {
     //Если ресурсов нет - иду копать
     if (creep.carry.energy == 0) {
-        creep.memory.state = CreepConst.Creep_State_Harves;
+        creep.memory.state = CreepConst.Creep_State_Harvest;
         return;
     }
 
