@@ -17,5 +17,5 @@ module.exports = {
         [WORK, WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], //10
     ],
     actionName : ActionConst.Action_Mine,
-    state : "harvest",
+    state : CreepConst.Creep_State_Deliver,
 }
