@@ -110,9 +110,18 @@ function getBodyNum(maxCapacity)
             return 4;
         case 550:
             return 5;
+        case 600:
+            return 6;
+        case 650:
+            return 7;
+        case 700:
+            return 8;
+        case 750:
+            return 9;
+        case 800:
+            return 10;
 
         default:
-            console.log("def");
-            return 5;
+            return 0;
     }
 }
