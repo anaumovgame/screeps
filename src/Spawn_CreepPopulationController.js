@@ -122,6 +122,6 @@ function getBodyNum(maxCapacity)
             return 10;
 
         default:
-            return 0;
+            return 10;
     }
 }
