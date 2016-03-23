@@ -4,7 +4,7 @@ var CreepConst = require("Creep_Const");
 module.exports = function(creep) {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
-    var status = creep.memory.status;
+    var status = creep.memory.state;
 
     console.log("service() " + status);
 
