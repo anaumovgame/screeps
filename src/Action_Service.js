@@ -6,6 +6,11 @@ module.exports = function(creep) {
     var spawn = Game.spawns[creepSpawnName];
     var status = creep.memory.status;
 
+    if (status = CreepConst.Creep_State_Charge)
+    {
+        charge();
+    }
+
     if (creep.carry.energy > 0) {
         //Если спавн не полон - несём в спавнер
         if (spawn.energy < spawn.energyCapacity) {
@@ -22,16 +27,24 @@ module.exports = function(creep) {
         }
     } else
     {
-        var nearestContainer = selectNearestContainerWithEnergy(creep);
-        if (nearestContainer) {
-            if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
-                creep.moveTo(nearestContainer);
-            }
-        }
+
     }
 }
 
+function charge()
+{
+    if (creep.carry.energy > 0)
+    {
+        creep.memory.status = Creep_State_Deliver;
+    }
 
+    var nearestContainer = selectNearestContainerWithEnergy(creep);
+    if (nearestContainer) {
+        if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
+            creep.moveTo(nearestContainer);
+        }
+    }
+}
 
 //Поиск ближайшего к крипу extension который можно заполнить энергией
 function selectNearestExtensionWithoutEnergy(creep)
