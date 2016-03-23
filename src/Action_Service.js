@@ -9,25 +9,9 @@ module.exports = function(creep) {
     if (status = CreepConst.Creep_State_Charge)
     {
         charge();
-    }
-
-    if (creep.carry.energy > 0) {
-        //Если спавн не полон - несём в спавнер
-        if (spawn.energy < spawn.energyCapacity) {
-            if (creep.transferEnergy(spawn) == -9) {
-                creep.moveTo(spawn);
-            }
-        } else {
-            var nearestExtensions = selectNearestExtensionWithoutEnergy(spawn);
-            if (nearestExtensions != null) {
-                if (creep.transferEnergy(nearestExtensions) == -9) {
-                    creep.moveTo(nearestExtensions);
-                }
-            }
-        }
     } else
     {
-
+        service();
     }
 }
 
@@ -53,6 +37,20 @@ function service()
     {
         creep.memory.status = CreepConst.Creep_State_Charge;
         return;
+    }
+
+    //Если спавн не полон - несём в спавнер
+    if (spawn.energy < spawn.energyCapacity) {
+        if (creep.transferEnergy(spawn) == -9) {
+            creep.moveTo(spawn);
+        }
+    } else {
+        var nearestExtensions = selectNearestExtensionWithoutEnergy(spawn);
+        if (nearestExtensions != null) {
+            if (creep.transferEnergy(nearestExtensions) == -9) {
+                creep.moveTo(nearestExtensions);
+            }
+        }
     }
 }
 
