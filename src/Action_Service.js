@@ -6,6 +6,8 @@ module.exports = function(creep) {
     var spawn = Game.spawns[creepSpawnName];
     var status = creep.memory.status;
 
+    console.log("service()");
+
     if (status == CreepConst.Creep_State_Charge)
     {
         charge();
