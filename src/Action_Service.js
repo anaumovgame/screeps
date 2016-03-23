@@ -6,10 +6,10 @@ module.exports = function(creep) {
     var spawn = Game.spawns[creepSpawnName];
     var status = creep.memory.status;
 
-    if (status = CreepConst.Creep_State_Charge)
+    if (status == CreepConst.Creep_State_Charge)
     {
         charge();
-    } else if (status = CreepConst.Creep_State_Service)
+    } else if (status == CreepConst.Creep_State_Service)
     {
         service();
     }
