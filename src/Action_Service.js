@@ -17,6 +17,7 @@ module.exports = function(creep) {
 
 function charge()
 {
+    console.log("charge");
     if (creep.carry.energy > 0)
     {
         creep.memory.status = CreepConst.Creep_State_Service;
@@ -33,6 +34,7 @@ function charge()
 
 function service()
 {
+    console.log("service");
     if (creep.carry.energy == 0)
     {
         creep.memory.status = CreepConst.Creep_State_Charge;
