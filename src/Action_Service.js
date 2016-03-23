@@ -4,8 +4,21 @@ var CreepConst = require("Creep_Const");
 module.exports = function(creep) {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
-    var extension = selectNearestExtensionWithoutEnergy(creep);
+
+    if (creep.carry.energy > 0) {
+        var extension = selectNearestExtensionWithoutEnergy(creep);
+    } else
+    {
+        var nearestContainer = selectNearestContainerWithEnergy(creep);
+        if (nearestContainer) {
+            if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
+                creep.moveTo(nearestContainer);
+            }
+        }
+    }
 }
+
+
 
 //Поиск ближайшего к крипу extension который можно заполнить энергией
 function selectNearestExtensionWithoutEnergy(creep)
