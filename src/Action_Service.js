@@ -10,16 +10,16 @@ module.exports = function(creep) {
 
     if (status == CreepConst.Creep_State_Charge)
     {
-        charge();
+        charge(creep, spawn);
     } else if (status == CreepConst.Creep_State_Service)
     {
-        service();
+        service(creep, spawn);
     }
 }
 
-function charge()
+function charge(creep, spawn)
 {
-    console.log("charge");
+    cree
     if (creep.carry.energy > 0)
     {
         creep.memory.status = CreepConst.Creep_State_Service;
@@ -34,7 +34,7 @@ function charge()
     }
 }
 
-function service()
+function service(creep, spawn)
 {
     console.log("service");
     if (creep.carry.energy == 0)
