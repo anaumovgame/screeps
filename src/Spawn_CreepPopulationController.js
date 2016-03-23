@@ -46,7 +46,7 @@ function getSpawnPopulation(spawnName)
     var minerCount = 0;
     var workerCount = 0;
     var guardCount = 0;
-    var healerCount = 0; 
+    var healerCount = 0;
 
     for (var creepName in Game.creeps)
     {
