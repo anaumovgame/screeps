@@ -19,7 +19,7 @@ function charge(creep, spawn)
 {
     if (creep.carry.energy > 0)
     {
-        creep.memory.status = CreepConst.Creep_State_Service;
+        creep.memory.state = CreepConst.Creep_State_Service;
         creep.say("Service!");
         return;
     }
@@ -36,7 +36,7 @@ function service(creep, spawn)
 {
     if (creep.carry.energy == 0)
     {
-        creep.memory.status = CreepConst.Creep_State_Charge;
+        creep.memory.state = CreepConst.Creep_State_Charge;
         creep.say("Charge!");
         return;
     }
