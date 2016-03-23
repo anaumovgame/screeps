@@ -120,6 +120,26 @@ function getBodyNum(maxCapacity)
             return 9;
         case 800:
             return 10;
+        case 850:
+            return 11;
+        case 900:
+            return 12;
+        case 950:
+            return 13;
+        case 1000:
+            return 14;
+        case 1050:
+            return 15;
+        case 1100:
+            return 16;
+        case 1150:
+            return 17;
+        case 1200:
+            return 18;
+        case 1250:
+            return 19;
+        case 1300:
+            return 20;
 
         default:
             return 10;
