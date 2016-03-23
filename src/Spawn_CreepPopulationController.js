@@ -45,6 +45,7 @@ function getSpawnPopulation(spawnName)
 {
     var minerCount = 0;
     var workerCount = 0;
+    var serviceCount = 0;
     var guardCount = 0;
     var healerCount = 0;
 
@@ -59,6 +60,9 @@ function getSpawnPopulation(spawnName)
             if (isClassName(creep, CreepConst.Creep_Worker)) {
                 workerCount += 1;
             } else
+            if (isClassName(creep, CreepConst.Creep_Servant)) {
+                serviceCount += 1;
+            } else
             if (isClassName(creep, CreepConst.Creep_Guard)) {
                 guardCount += 1;
             } else
@@ -71,6 +75,7 @@ function getSpawnPopulation(spawnName)
     return {
         minerCount : minerCount,
         workerCount : workerCount,
+        serviceCount : serviceCount,
         guardCount : guardCount,
         healerCount : healerCount
     };
