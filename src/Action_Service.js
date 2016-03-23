@@ -35,7 +35,8 @@ function charge()
 {
     if (creep.carry.energy > 0)
     {
-        creep.memory.status = Creep_State_Deliver;
+        creep.memory.status = CreepConst.Creep_State_Service;
+        return;
     }
 
     var nearestContainer = selectNearestContainerWithEnergy(creep);
@@ -43,6 +44,15 @@ function charge()
         if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
             creep.moveTo(nearestContainer);
         }
+    }
+}
+
+function service()
+{
+    if (creep.carry.energy == 0)
+    {
+        creep.memory.status = CreepConst.Creep_State_Charge;
+        return;
     }
 }
 
