@@ -81,3 +81,29 @@ function selectNearestExtensionWithoutEnergy(creep)
 
     return nearestExtension;
 }
+
+//Поиск ближайшего к крипу container с энергией
+function selectNearestContainerWithEnergy(creep)
+{
+    var nearestContainer;
+    var wayLength = 999999;
+
+    //Перебираю все флаги в комнате
+    var containers = creep.room.find(FIND_STRUCTURES, {filter: { structureType: "container" }});
+    for (var containerNum in containers) {
+        var container = containers[containerNum];
+
+        //Если в хранилище есть энергия
+        if (container.store.energy > 0) {
+            //Измеряю путь
+            var way = PathFinder.search(creep.pos, container.pos);
+            //Сохраняю наименьший путь
+            if (way.path.length < wayLength) {
+                nearestContainer = container;
+                wayLength = way.path.length;
+            }
+        }
+    }
+
+    return nearestContainer;
+}
