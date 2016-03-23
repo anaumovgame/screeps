@@ -27,4 +27,5 @@ module.exports = {
             [CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE], //20
     ],
     actionName : ActionConst.Action_Service,
+    state : CreepConst.Creep_State_Charge,
 }
