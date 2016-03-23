@@ -9,7 +9,7 @@ module.exports = function(creep) {
     if (status = CreepConst.Creep_State_Charge)
     {
         charge();
-    } else
+    } else if (status = CreepConst.Creep_State_Service)
     {
         service();
     }
