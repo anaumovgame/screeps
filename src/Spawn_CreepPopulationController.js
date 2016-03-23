@@ -17,7 +17,7 @@ function reproducePopulation(spawnName, population)
     } else
     if (population.serviceCount < Game.spawns[spawnName].memory.serviceMax)
     {
-        createCreep(spawnName, CreepConst.Creep_Service);
+        createCreep(spawnName, CreepConst.Creep_Servant);
     } else
     if (population.workerCount < Game.spawns[spawnName].memory.workerMax)
     {
@@ -46,7 +46,7 @@ function getSpawnPopulation(spawnName)
     var minerCount = 0;
     var workerCount = 0;
     var guardCount = 0;
-    var healerCount = 0;
+    var healerCount = 0; 
 
     for (var creepName in Game.creeps)
     {
