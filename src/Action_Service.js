@@ -33,28 +33,28 @@ function selectNearestEmptyExtension(spawn)
     return nearestExtension;
 }
 
-//Поиск ближайшего к крипу container который можно заполнить энергией
-function selectNearestContainerWithEnergy(creep)
+//Поиск ближайшего к крипу extension который можно заполнить энергией
+function selectNearestExtensionWithoutEnergy(creep)
 {
-    var nearestContainer;
+    var nearestExtension;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var containers = creep.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
-    for (var containerNum in containers) {
-        var container = containers[containerNum];
+    var extensions = creep.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
+    for (var extensionNum in extensions) {
+        var extension = extensions[extensionNum];
 
         //Если в хранилище есть энергия
         if (extension.energy < extension.energyCapacity) {
             //Измеряю путь
-            var way = PathFinder.search(creep.pos, container.pos);
+            var way = PathFinder.search(creep.pos, extension.pos);
             //Сохраняю наименьший путь
             if (way.path.length < wayLength) {
-                nearestContainer = container;
+                nearestExtension = extension;
                 wayLength = way.path.length;
             }
         }
     }
 
-    return nearestContainer;
+    return nearestExtension;
 }
