@@ -6,8 +6,6 @@ module.exports = function(creep) {
     var spawn = Game.spawns[creepSpawnName];
     var status = creep.memory.state;
 
-    console.log("service() " + status);
-
     if (status == CreepConst.Creep_State_Charge)
     {
         charge(creep, spawn);
@@ -19,10 +17,10 @@ module.exports = function(creep) {
 
 function charge(creep, spawn)
 {
-    cree
     if (creep.carry.energy > 0)
     {
         creep.memory.status = CreepConst.Creep_State_Service;
+        creep.say("Service!");
         return;
     }
 
@@ -36,10 +34,10 @@ function charge(creep, spawn)
 
 function service(creep, spawn)
 {
-    console.log("service");
     if (creep.carry.energy == 0)
     {
         creep.memory.status = CreepConst.Creep_State_Charge;
+        creep.say("Charge!");
         return;
     }
 
