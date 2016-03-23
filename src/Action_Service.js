@@ -27,7 +27,7 @@ function charge(creep, spawn)
     var nearestContainer = selectNearestContainerWithEnergy(creep);
     if (nearestContainer) {
         if (nearestContainer.transfer(creep, RESOURCE_ENERGY) == -9) {
-            creep.moveTo(nearestContainer); 
+            creep.moveTo(nearestContainer);
         }
     }
 }
