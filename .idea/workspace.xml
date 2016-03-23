@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/Creep_Miner.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6797386">
-              <caret line="26" column="125" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
+              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -747,7 +747,7 @@
     <entry file="file://$PROJECT_DIR$/src/Creep_Miner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6797386">
-          <caret line="26" column="125" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding />
         </state>
       </provider>
