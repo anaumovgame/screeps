@@ -61,7 +61,7 @@ function deliverResource(creep)
         }
     }*/
     //Если спавн не полон - несём в спавнер
-    if (spawn.energy < spawn.energyCapacity) {
+   /* if (spawn.energy < spawn.energyCapacity) {
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
@@ -71,7 +71,9 @@ function deliverResource(creep)
             if (creep.transferEnergy(nearestExtensions) == -9) {
                 creep.moveTo(nearestExtensions);
             }
-        } else {
+        } else
+        */
+        {
             var nearestContainer = selectNearestEmptyContainer(spawn);
             if (nearestContainer != null) {
                 if (creep.transferEnergy(nearestContainer) == -9) {
@@ -86,7 +88,7 @@ function deliverResource(creep)
                 }
             }
         }
-    }
+    //}
 }
 
 //Поиск ближайшего к спауну Tower
