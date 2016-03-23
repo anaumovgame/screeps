@@ -8,4 +8,5 @@ module.exports = {
 
     Creep_State_Harvest : "harvest",
     Creep_State_Deliver : "deliver",
+    Creep_State_Charge : "charge",
 }

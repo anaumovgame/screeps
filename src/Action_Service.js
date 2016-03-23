@@ -4,9 +4,22 @@ var CreepConst = require("Creep_Const");
 module.exports = function(creep) {
     var creepSpawnName = creep.memory.spawnName;
     var spawn = Game.spawns[creepSpawnName];
+    var status = creep.memory.status;
 
     if (creep.carry.energy > 0) {
-        var extension = selectNearestExtensionWithoutEnergy(creep);
+        //Если спавн не полон - несём в спавнер
+        if (spawn.energy < spawn.energyCapacity) {
+            if (creep.transferEnergy(spawn) == -9) {
+                creep.moveTo(spawn);
+            }
+        } else {
+            var nearestExtensions = selectNearestExtensionWithoutEnergy(spawn);
+            if (nearestExtensions != null) {
+                if (creep.transferEnergy(nearestExtensions) == -9) {
+                    creep.moveTo(nearestExtensions);
+                }
+            }
+        }
     } else
     {
         var nearestContainer = selectNearestContainerWithEnergy(creep);
