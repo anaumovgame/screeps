@@ -40,12 +40,12 @@ function selectNearestContainerWithEnergy(creep)
     var wayLength = 999999;
 
     //ѕеребираю все флаги в комнате
-    var containers = creep.room.find(FIND_STRUCTURES, {filter: { structureType: "container" }});
+    var containers = creep.room.find(FIND_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
     for (var containerNum in containers) {
         var container = containers[containerNum];
 
         //≈сли в хранилище есть энерги€
-        if (container.store.energy > 0) {
+        if (extension.energy < extension.energyCapacity) {
             //»змер€ю путь
             var way = PathFinder.search(creep.pos, container.pos);
             //—охран€ю наименьший путь
