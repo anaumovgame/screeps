@@ -44,8 +44,7 @@ function harvestUnderFlag(creep, flag)
     }
 }
 
-function deliverResource(creep)
-{
+function deliverResource(creep) {
     //Если ресурсов нет - иду копать
     if (creep.carry.energy == 0) {
         creep.memory.state = CreepConst.Creep_State_Harvest;
@@ -55,11 +54,11 @@ function deliverResource(creep)
 
     var spawn = Game.spawns[creep.memory.spawnName];
     /*var storage = creep.room.storage;
-    if (storage.energy < storage.energyCapacity) {
-        if (creep.transferEnergy(storage) == -9) {
-            creep.moveTo(storage);
-        }
-    }*/
+     if (storage.energy < storage.energyCapacity) {
+     if (creep.transferEnergy(storage) == -9) {
+     creep.moveTo(storage);
+     }
+     }*/
     //Если спавн не полон - несём в спавнер
     if (spawn.energy < spawn.energyCapacity) {
         if (creep.transferEnergy(spawn) == -9) {
@@ -71,8 +70,7 @@ function deliverResource(creep)
             if (creep.transferEnergy(nearestExtensions) == -9) {
                 creep.moveTo(nearestExtensions);
             }
-        } else
-        {
+        } else {
             var nearestContainer = selectNearestEmptyContainer(spawn);
             if (nearestContainer != null) {
                 if (creep.transferEnergy(nearestContainer) == -9) {
@@ -87,17 +85,17 @@ function deliverResource(creep)
                 }
             }
         }
-    //}
+    }
 }
 
+
 //Поиск ближайшего к спауну Tower
-function selectNearestEmptyTower(spawn)
-{
+function selectNearestEmptyTower(spawn) {
     var nearestTower = null;
     var wayLength = 999999;
 
     //Перебираю все флаги в комнате
-    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_TOWER }});
+    var towers = spawn.room.find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_TOWER}});
     for (var towerNum in towers) {
         var tower = towers[towerNum];
 
@@ -117,96 +115,90 @@ function selectNearestEmptyTower(spawn)
 }
 
 //Поиск ближайшего к спауну extension
-function selectNearestEmptyExtension(spawn)
-{
-    var nearestExtension = null;
-    var wayLength = 999999;
+    function selectNearestEmptyExtension(spawn) {
+        var nearestExtension = null;
+        var wayLength = 999999;
 
-    //Перебираю все флаги в комнате
-    var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: { structureType: STRUCTURE_EXTENSION }});
-    for (var extensionNum in extensions) {
-        var extension = extensions[extensionNum];
+        //Перебираю все флаги в комнате
+        var extensions = spawn.room.find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}});
+        for (var extensionNum in extensions) {
+            var extension = extensions[extensionNum];
 
-        //Если в хранилище есть место
-        if (extension.energy < extension.energyCapacity) {
-            //Измеряю путь
-            var way = PathFinder.search(spawn.pos, extension.pos);
-            //Сохраняю наименьший путь
-            if (way.path.length < wayLength) {
-                nearestExtension = extension;
-                wayLength = way.path.length;
+            //Если в хранилище есть место
+            if (extension.energy < extension.energyCapacity) {
+                //Измеряю путь
+                var way = PathFinder.search(spawn.pos, extension.pos);
+                //Сохраняю наименьший путь
+                if (way.path.length < wayLength) {
+                    nearestExtension = extension;
+                    wayLength = way.path.length;
+                }
             }
         }
-    }
 
-    return nearestExtension;
-}
+        return nearestExtension;
+    }
 
 //Поиск ближайшего к спауну container
-function selectNearestEmptyContainer(spawn)
-{
-    var nearestContainer = null;
-    var wayLength = 999999;
+    function selectNearestEmptyContainer(spawn) {
+        var nearestContainer = null;
+        var wayLength = 999999;
 
-    //Перебираю все флаги в комнате
-    var containers = spawn.room.find(FIND_STRUCTURES, {filter: { structureType: "container" }});
-    for (var containerNum in containers) {
-        var container = containers[containerNum];
+        //Перебираю все флаги в комнате
+        var containers = spawn.room.find(FIND_STRUCTURES, {filter: {structureType: "container"}});
+        for (var containerNum in containers) {
+            var container = containers[containerNum];
 
-        //Если в хранилище есть место
-        if (_.sum(container.store) < container.storeCapacity) {
-            //Измеряю путь
-            var way = PathFinder.search(spawn.pos, container.pos);
-            //Сохраняю наименьший путь
-            if (way.path.length < wayLength) {
-                nearestContainer = container;
-                wayLength = way.path.length;
+            //Если в хранилище есть место
+            if (_.sum(container.store) < container.storeCapacity) {
+                //Измеряю путь
+                var way = PathFinder.search(spawn.pos, container.pos);
+                //Сохраняю наименьший путь
+                if (way.path.length < wayLength) {
+                    nearestContainer = container;
+                    wayLength = way.path.length;
+                }
             }
         }
-    }
 
-    return nearestContainer;
-}
+        return nearestContainer;
+    }
 
 //Поиск ближайшего к спауну флага по типу
-function selectNearestFlag(spawn, flag_type)
-{
-    var nearestFlag;
-    var wayLength = 999999;
+    function selectNearestFlag(spawn, flag_type) {
+        var nearestFlag;
+        var wayLength = 999999;
 
-    //Перебираю все флаги в комнате
-    var flags = spawn.room.find(FIND_FLAGS);
-    for (var flagNum in flags)
-    {
-        var flag = flags[flagNum];
-        //Если флаг соответствует ресурсу
-        if (flag.name.indexOf(flag_type) > -1) {
-            //Измеряю путь
-            var way = PathFinder.search(spawn.pos, flag.pos);
-            //Сохраняю наименьший путь
-            if (way.path.length < wayLength) {
-                nearestFlag = flag;
-                wayLength = way.path.length;
+        //Перебираю все флаги в комнате
+        var flags = spawn.room.find(FIND_FLAGS);
+        for (var flagNum in flags) {
+            var flag = flags[flagNum];
+            //Если флаг соответствует ресурсу
+            if (flag.name.indexOf(flag_type) > -1) {
+                //Измеряю путь
+                var way = PathFinder.search(spawn.pos, flag.pos);
+                //Сохраняю наименьший путь
+                if (way.path.length < wayLength) {
+                    nearestFlag = flag;
+                    wayLength = way.path.length;
+                }
             }
         }
+
+        return nearestFlag;
     }
 
-    return nearestFlag;
-}
-
 //Поиск ближайшей к спавну свободной энергии
-function selectNearestFreeEnergy(spawn)
-{
-    var nearestEnergy = null;
-    var wayLength = 999999;
+    function selectNearestFreeEnergy(spawn) {
+        var nearestEnergy = null;
+        var wayLength = 999999;
 
-    //Перебираю все флаги в комнате
-    var energies = spawn.room.find(FIND_DROPPED_RESOURCES);
-    for (var energyNum in energies)
-    {
-        var energy = energies[energyNum];
-        //Если флаг соответствует ресурсу
-        //if (energy.name.indexOf(flag_type) > -1) {
+        //Перебираю все флаги в комнате
+        var energies = spawn.room.find(FIND_DROPPED_RESOURCES);
+        for (var energyNum in energies) {
+            var energy = energies[energyNum];
+            //Если флаг соответствует ресурсу
+            //if (energy.name.indexOf(flag_type) > -1) {
             //Измеряю путь
             var way = PathFinder.search(spawn.pos, energy.pos);
             //Сохраняю наименьший путь
@@ -214,8 +206,42 @@ function selectNearestFreeEnergy(spawn)
                 nearestEnergy = energy;
                 wayLength = way.path.length;
             }
-        //}
+            //}
+        }
+
+        return nearestEnergy;
     }
 
-    return nearestEnergy;
-}
+    function getSpawnPopulation(spawnName) {
+        var minerCount = 0;
+        var workerCount = 0;
+        var serviceCount = 0;
+        var guardCount = 0;
+        var healerCount = 0;
+
+        for (var creepName in Game.creeps) {
+            var creep = Game.creeps[creepName];
+            if (creep.memory.spawnName == spawnName) {
+                if (isClassName(creep, CreepConst.Creep_Miner)) {
+                    minerCount += 1;
+                } else if (isClassName(creep, CreepConst.Creep_Worker)) {
+                    workerCount += 1;
+                } else if (isClassName(creep, CreepConst.Creep_Servant)) {
+                    serviceCount += 1;
+                } else if (isClassName(creep, CreepConst.Creep_Guard)) {
+                    guardCount += 1;
+                } else if (isClassName(creep, CreepConst.Creep_Healer)) {
+                    healerCount += 1;
+                }
+            }
+        }
+
+        return {
+            minerCount: minerCount,
+            workerCount: workerCount,
+            serviceCount: serviceCount,
+            guardCount: guardCount,
+            healerCount: healerCount
+        };
+
+    }
