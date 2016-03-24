@@ -61,7 +61,7 @@ function deliverResource(creep)
         }
     }*/
     //Если спавн не полон - несём в спавнер
-   /* if (spawn.energy < spawn.energyCapacity) {
+    if (spawn.energy < spawn.energyCapacity) {
         if (creep.transferEnergy(spawn) == -9) {
             creep.moveTo(spawn);
         }
@@ -72,7 +72,6 @@ function deliverResource(creep)
                 creep.moveTo(nearestExtensions);
             }
         } else
-        */
         {
             var nearestContainer = selectNearestEmptyContainer(spawn);
             if (nearestContainer != null) {
